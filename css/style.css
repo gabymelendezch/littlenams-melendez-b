@@ -18,7 +18,11 @@ body{
     
 }
 
-nav, section{
+nav{
+    border-bottom: .5px solid #227c9d55;
+}
+
+section{
     margin-top: 30px;
     padding-bottom: 30px;
     border-bottom: .5px solid #227c9d55;
@@ -33,7 +37,7 @@ h1{
     margin-bottom: 30px;
     font-family: 'Cabin Sketch', cursive;
     /*font-family: 'Roboto', sans-serif;*/
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 600;
     text-align: left;
     text-transform: uppercase;
@@ -506,12 +510,13 @@ p{
 
     /*dropdown menu*/
     .btn {
-        width:12.5rem;
+        width:80vw;
         margin-left:.5rem;
     }
 
     .dropdown-menu{
-        width:12.5rem;
+        width:80vw;
+        background-color:#F6F4D2;
     }
 
     /*grid categorías*/
@@ -537,6 +542,10 @@ p{
         width: 200px;
     }
 
+    h2{
+        text-align: center;
+    }
+
     /* Nav Bar */
     .espacio-x{
         padding-right: 0rem;
@@ -547,12 +556,12 @@ p{
         margin-inline: .5rem;
     }
     
-    /*** Página Inicio ***/
+    /* Página Inicio */
     .h3-link{
         width: 200px;
     }
 
-    /*** Página Recetas ***/
+    /*** Página Recetas */
     .grid-categorias li{
         width: 200px;
     }
@@ -582,12 +591,12 @@ p{
         width: 170px;
     }
 
-    /*** Página Inicio ***/
+    /* Página Inicio */
     .h3-link{
         width: 170px;
     }
 
-    /*** Página Recetas ***/
+    /* Página Recetas */
     .grid-categorias {
         padding-inline: 40px;
     }
@@ -610,8 +619,31 @@ p{
     }
 } 
 
-/* ----- 405 ----- */
-@media only screen and (max-width: 405px) {
+/* ----- 392 ----- */
+@media only screen and (max-width: 392px) {
+    .img-thumb-pequeño{
+        width: 240px;
+    }
+
+    /* Página de Inicio */
+    .box-form{
+        width: 140px; 
+    }
+
+    .h3-link{
+        width: 240px;
+    }
+
+    /* Página Recetas */
+    .grid-categorias {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(16,1fr);
+        padding-inline: 56px;
+    }
+
+    .grid-categorias li{
+        width: 240px;
+    }
 
      /* Página Blog */
      .contenedor-posts-blog .post-blog a img{
@@ -624,46 +656,6 @@ p{
     
     .texto-post{
         width: 240px;
-    }
-}
-
-/* ----- 360 ----- */
-@media only screen and (max-width: 360px) {
-    .img-thumb-pequeño{
-        width:240px;
-    }
-
-    /* Página de Inicio */
-    .box-form{
-        width: 140px; 
-    }
-
-    .h3-link{
-        width: 240px;
-    }
-
-    /*** Página Recetas ***/
-    .grid-categorias {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(16,1fr);
-        padding-inline: 48px;
-    }
-
-    .grid-categorias li{
-        width: 240px;
-    }
-
-    /* Página Blog */
-    .contenedor-posts-blog .post-blog a img{
-        width: 250px;
-    }
-
-    .h3-link-med{
-        width: 250px;
-    }
-    
-    .texto-post{
-        width: 250px;
     }
 
     /* Página de Contacto */
