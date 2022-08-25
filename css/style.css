@@ -60,17 +60,6 @@ h3{
     font-size: 18px;
 }
 
-/* Títulos Catergorías H3 */
-.titulo-categorias{
-    display: block;
-    margin: 15px 0px 15px 0px;
-    font-family: 'Roboto Condensed', sans-serif;    
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
 
 p{
     margin-bottom: 15px;
@@ -108,6 +97,7 @@ p{
     padding: 5px 15px;
     background-color: #D4E09B;
     border: 1px solid #444;
+    border-radius: 6px;
     font-size: 14px;
     font-weight: bold;
     color: #444;
@@ -128,6 +118,7 @@ p{
     padding: 10px 15px;
     margin-top: 30px;
     border: 1px solid #444;
+    border-radius: 6px;
     font-size: 14px;
     font-weight: bold;
     color: #444;
@@ -152,6 +143,7 @@ p{
     height: 33px; 
     padding-left:8px;
     border: 1px solid #444;
+    border-radius: 6px;
 }
 
 /*** Hover Títulos ***/
@@ -243,7 +235,6 @@ p{
 }   
 
 
-
 /* ----------- PAGINA DE INICIO ---------- */
 .gradiente{
     padding:10px;
@@ -278,13 +269,19 @@ p{
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: #d4e09bd0;
     --bs-btn-disabled-border-color: #d4e09bd0;
+
+    width:180px;
+}
+
+.dropdown-item{
+    width: 180px;
+    color:#8eaf96;
 }
 
 .dropdown-item:hover {
     color: #444;
     background-color: var(--bs-dropdown-link-hover-bg);
 }
-
 
 /* Grid Recetas Categorías */
 .grid-categorias {
@@ -295,6 +292,17 @@ p{
     grid-template-rows: repeat(4,1fr);
     grid-column-gap: 30px;  
     justify-content: center;
+}
+
+/* Títulos H3 */
+.titulo-categorias{
+    display: block;
+    margin: 10px 0px 30px 0px;
+    font-family: 'Roboto Condensed', sans-serif;    
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .grid-categorias li{
@@ -308,12 +316,6 @@ p{
     color: #444;
 }
 
-.grid-categorias li a h3{
-    margin-top: 10px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    font-family: 'Roboto Condensed', sans-serif;
-}
 
 .grid-categorias li a:hover{
     color: #D4E09B;
@@ -446,15 +448,13 @@ p{
     }
     
     /* Nav Bar */
-    .navbar{
-        box-shadow: #F6F4D2;
-    }
-
     .navbar-nav{
         margin-top: 1rem;
         padding-inline: 2rem;
         padding-top: .5rem;
         padding-bottom: 1rem;
+        color:#444;
+        border-radius: 10px;
 
         background-color: #D4E09B;
         --bs-nav-link-hover-color: #F6F4D2;
@@ -466,7 +466,16 @@ p{
         letter-spacing: 0;
     }
 
-    .subrayado-menu1, .subrayado-menu2, .subrayado-menu3, .subrayado-menu4, .subrayado-menu5{
+    .navbar-nav .nav-link.active{
+        color: #fff;
+    }
+
+    .nav-link{
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .subrayado-menu1, .subrayado-menu2, .subrayado-menu3{
         border-bottom:solid .5px #F6F4D2;
     }
 
@@ -495,6 +504,7 @@ p{
 
 /* ----- 768 ----- */
 @media only screen and (max-width: 768px) {
+    
 
     /* Nav Bar */
     .espacio-x{
@@ -510,13 +520,12 @@ p{
 
     /*dropdown menu*/
     .btn {
-        width:80vw;
+        width:70vw;
         margin-left:.5rem;
     }
 
     .dropdown-menu{
-        width:80vw;
-        background-color:#F6F4D2;
+        width:70vw;
     }
 
     /*grid categorías*/
@@ -528,6 +537,10 @@ p{
     .grid-categorias {
         padding-inline:129px;
         grid-column-gap: 8px;  
+    }
+
+    .titulo-categorias{
+        margin-bottom: 20px;
     }
 
 }
@@ -544,6 +557,10 @@ p{
 
     h2{
         text-align: center;
+    }
+
+    h3{
+        font-size: 16px;
     }
 
     /* Nav Bar */
@@ -582,6 +599,7 @@ p{
     .texto-post{
         width: 200px;
         text-align: left;
+        font-size: 15px;
     }
 }
 
@@ -605,6 +623,10 @@ p{
         width: 170px;
     }
 
+    .titulo-categorias{
+        margin-bottom: 10px;
+    }
+
     /* Página Blog */
     .contenedor-posts-blog .post-blog a img{
         width: 170px;
@@ -621,6 +643,10 @@ p{
 
 /* ----- 392 ----- */
 @media only screen and (max-width: 392px) {
+    h3{
+        font-size: 18px;
+    }
+    
     .img-thumb-pequeño{
         width: 240px;
     }
@@ -645,6 +671,11 @@ p{
         width: 240px;
     }
 
+    .titulo-categorias{
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
      /* Página Blog */
      .contenedor-posts-blog .post-blog a img{
         width: 240px;
@@ -656,6 +687,8 @@ p{
     
     .texto-post{
         width: 240px;
+        text-align: justify;
+        font-size: initial;
     }
 
     /* Página de Contacto */
