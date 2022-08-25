@@ -641,8 +641,8 @@ p{
     }
 } 
 
-/* ----- 375 ----- */
-@media only screen and (max-width: 375px) {
+/* ----- 395 ----- */
+@media only screen and (max-width: 395px) {
     h3{
         font-size: 18px;
     }
