@@ -547,7 +547,7 @@ p{
 
     /* Página Blog e Ebook */
     .contenedor-posts-blog {
-        column-gap: 15px;
+        column-gap: 8px;
         row-gap: 30px;
     }
 
@@ -563,6 +563,10 @@ p{
 
 /* ----- 500 ----- */
 @media only screen and (max-width: 532px) {
+    main{
+        margin-inline: 0px;
+    }
+
     .animacion-logo{
         width: 175px;
     }
@@ -619,12 +623,12 @@ p{
 /* ----- 460 ----- */
 @media only screen and (max-width: 460px) {
     .img-thumb-pequeño{
-        width: 150px;
+        width: 165px;
     }
 
     /* Página Inicio */
     .h3-link{
-        width: 150px;
+        width: 165px;
     }
 
     /* Página Recetas */
@@ -633,7 +637,7 @@ p{
     }
 
     .grid-categorias li{
-        width: 150px;
+        width: 165px;
     }
 
     .titulo-categorias{
@@ -642,15 +646,15 @@ p{
 
     /* Página Blog */
     .contenedor-posts-blog .post-blog a img{
-        width: 150px;
+        width: 165px;
     }
 
     .h3-link-med{
-        width: 150px;
+        width: 165px;
     }
     
     .texto-post{
-        width: 150px;
+        width: 165px;
     }
 } 
 
