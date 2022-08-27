@@ -22,15 +22,18 @@ nav{
     border-bottom: .5px solid #227c9d55;
 }
 
+main{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.container{
+    max-width: 100%;
+}
 section{
     margin-top: 30px;
     padding-bottom: 30px;
     border-bottom: .5px solid #227c9d55;
-}
-
-main{
-    margin-left: 80px;
-    margin-right: 80px;
 }
 
 h1{
@@ -46,6 +49,7 @@ h1{
 
 h2{
     margin-bottom: 30px;
+    font-size:20px;
     font-weight: 600;
     text-align: left;
     text-transform: uppercase;
@@ -62,9 +66,10 @@ h3{
 
 
 p{
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
+    font-weight: normal;
+    line-height: 1.8;
     letter-spacing: .1px;
 }
 
@@ -100,6 +105,15 @@ p{
 .img-thumb-gaby{
     width: 340px;
     height: auto;
+}
+
+/***  Imagen Post Receta/Blog ***/
+.img-post{
+    width: 95%;
+    height: auto;
+    margin: 10px auto 20px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 /***  Botones Acción ***/
@@ -189,9 +203,45 @@ p{
     padding: 2px;
 }
 
-/*** Hover Footer ***/
-.hover-footer:hover{
-    color:gray
+/*** Tags Categorías ***/
+.seccion-tags ul{
+    width: 380px;
+    column-gap: 10px;
+}
+
+.seccion-tags ul li{
+    display: inline-block;
+}
+
+.seccion-tags ul li a{
+    font-size:13px;
+    text-decoration: none;
+    color: #444;
+}
+
+.link-tag{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    width: 180px;
+    height: max-content;
+    border: 1px solid #444;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    color: #444;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: all .3s;
+}
+
+.link-tag:hover{
+    padding-inline: 12px;
+    background-color: #D4E09B;
+    border-color: #444;
+    color: #444;
+    transform: translateY(-2px);
 }
 
 
@@ -266,6 +316,10 @@ p{
 /*** FOOTER ***/
 .container-footer{
     width: 100%;
+}
+
+.hover-footer:hover{
+    color:gray
 }
 
 
@@ -383,6 +437,7 @@ p{
     overflow: hidden;
     padding-inline: 8px;
     text-align: justify;
+    line-height: 1.5;
 }
 
 
@@ -394,47 +449,47 @@ p{
 
 /* ----------- PÁGINA CONTACTO ---------- */
 
-.seccion-tags ul{
-    width: 380px;
-    column-gap: 10px;
+
+/* ----------- PÁGINA POST RECETAS ---------- */
+.post-wrap{
+    margin-right: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.seccion-tags ul li{
-    display: inline-block;
-}
-
-.seccion-tags ul li a{
-    font-size:13px;
+.categoria-post a{
     text-decoration: none;
     color: #444;
 }
 
-.link-tag{
-    display: inline-block;
-    margin-bottom: 10px;
-    padding: 6px 10px;
-    width: 180px;
-    height: max-content;
-    border: 1px solid #444;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 14px;
-    color: #444;
-    letter-spacing: 1.5px;
-    text-decoration: none;
+.categoria-post a:hover{
+    color: #D4E09B
+}
+
+.contenido-post a{
+    font-weight: 500;
+    text-decoration: none; 
+    color:#227C9D;
+    font-weight: bold; 
+}
+
+.contenido-post a:hover{
+    color:#444;
+}
+
+/* Recipe Card */
+.h3-post{
+    font-size: 16px;
+    text-align: left;
+}
+
+.h3-comentario{
     text-transform: uppercase;
-
-    transition: all .3s;
+    text-align: left;
 }
 
-.link-tag:hover{
-    padding: 6px 12px;
-    background-color: #D4E09B;
-    border-color: #444;
-    color: #444;
-    transform: translateY(-2px);
+.receta{
+    border: .5px solid #444;
 }
-
-
 
 
 /* ----------- MEDIA QUERIES ---------- */
@@ -590,6 +645,16 @@ p{
         padding-inline:12px;
     }
 
+    /* Página Post Receta */
+    .post-wrap{
+        margin-right: 0px;
+    }
+
+    .borde-sidebar{
+        margin-top:0px; 
+        padding-top: 30px; 
+        border-top: .5px solid #227c9d55;
+    }
 }
 
 /* ----- 500 ----- */
