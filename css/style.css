@@ -11,11 +11,7 @@
 
 body{
     width: 100%;
-    color: #444;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    
+    color: #444;   
 }
 
 nav{
@@ -30,16 +26,22 @@ main{
 .container{
     max-width: 100%;
 }
+
 section{
     margin-top: 30px;
     padding-bottom: 30px;
     border-bottom: .5px solid #227c9d55;
 }
 
+.sin-borde{
+    border-bottom: 0px;
+}
+
+/*** H1 ***/
 h1{
+    margin-top: 30px;
     margin-bottom: 30px;
     font-family: 'Cabin Sketch', cursive;
-    /*font-family: 'Roboto', sans-serif;*/
     font-size: 30px;
     font-weight: 600;
     text-align: left;
@@ -47,30 +49,82 @@ h1{
     letter-spacing: 0px;
 }
 
+/*** H2 ***/
 h2{
     margin-bottom: 30px;
-    font-size:20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
     font-weight: 600;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-
-h3{
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0;
-    text-align: center;
-    font-size: 18px;
+.h2-cabin{
+    font-family: 'Cabin Sketch', cursive; 
+    font-size: 26px;
 }
 
+.h2-post{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+/*** H3 ***/
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .1px;
+    text-align: center;
+}
+
+.titulo-categorias{
+    display: block;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto Condensed', sans-serif;    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.h3-receta{
+    font-size: 16px;
+    text-align: left;
+}
+
+.h3-comentario{
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/*** Otras Etiquetas Generales ***/
+.font-nav{
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
 p{
     margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     font-weight: normal;
     line-height: 1.8;
     letter-spacing: .1px;
+}
+
+.p-footer{
+    font-size: 12px;
+}
+
+form{
+    font-family: 'Roboto', sans-serif; 
+    letter-spacing: 0;
+}
+
+a{
+    color:#444;
 }
 
 /***  Imagen Pequeña ***/
@@ -123,6 +177,7 @@ p{
     background-color: #D4E09B;
     border: 1px solid #444;
     border-radius: 6px;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: #444;
@@ -144,6 +199,7 @@ p{
     margin-top: 30px;
     border: 1px solid #444;
     border-radius: 6px;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: #444;
@@ -313,9 +369,22 @@ p{
     --bs-gradient: none;
 }   
 
+.nav-box-buscar{
+    border: 1px solid #444;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-boton-buscar{
+    width: 50px;
+    margin-left: 0px;
+}
+
 /*** FOOTER ***/
 .container-footer{
     width: 100%;
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color: #D4E09B;
 }
 
 .hover-footer:hover{
@@ -382,19 +451,6 @@ p{
     justify-content: center;
 }
 
-/* Títulos H3 */
-.titulo-categorias{
-    display: block;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Roboto Condensed', sans-serif;    
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
 .grid-categorias li{
     width: 240px;
     list-style: none;
@@ -442,7 +498,6 @@ p{
 
 
 /* ----------- PÁGINA SOBRE MI ---------- */
-
 .espacio{
     padding-top: 15px;
 }
@@ -477,19 +532,18 @@ p{
 }
 
 /* Recipe Card */
-.h3-post{
-    font-size: 16px;
-    text-align: left;
-}
-
-.h3-comentario{
-    text-transform: uppercase;
-    text-align: left;
-}
-
 .receta{
-    border: .5px solid #444;
+    border: .5px solid #e4e4e4;
+    padding: 30px 20px;
+    background-color: #fcfcfcbf;
 }
+
+.img-receta-card{
+    background:url(../images/muffins-avena-chocolate.jpeg) no-repeat 50% 50%; 
+    background-size:cover; 
+    height: 150px;
+}
+
 
 
 /* ----------- MEDIA QUERIES ---------- */
@@ -714,6 +768,7 @@ p{
         text-align: left;
         font-size: 15px;
     }
+
 }
 
 /* ----- 460 ----- */

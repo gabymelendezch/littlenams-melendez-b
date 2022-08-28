@@ -34,7 +34,7 @@
 
         <!--elementos del menú colapsable-->
         <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
+          <ul class="navbar-nav font-nav mb-2 mb-lg-0 text-uppercase">
 
             <li class="nav-item subrayado-menu1">
               <a class="nav-link" href="./recetas.html">Recetas</a>
@@ -59,8 +59,8 @@
           </ul>
 
           <form class="d-flex mt-2">
-            <input class="form-control me-1 ps-2 rounded" style="border: 1px solid #444; font-family: 'Roboto', sans-serif;" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success" style="width:50px; margin-left:0;" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input class="form-control me-1 ps-2 rounded nav-box-buscar" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success nav-boton-buscar" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
 
         </div>
@@ -68,19 +68,19 @@
   </nav>
 
   <main>
-    <section class="container">
+    <section class="container sin-borde mt-3">
       <div class="row gap-4 gap-md-0"> 
 
         <!--Formulario-->
-        <div class="col-md-7" style="margin-right:60px;">
+        <div class="col-md-7 me-5">
 
-          <header><h1 class="mt-3">Contacto</h1></header>
+          <header><h1>Contacto</h1></header>
           <div class="d-flex flex-column">
             <p>¿Tienes algún comentario, pregunta o sugerencia? Quiero saber de ti! </p>
             <p>Además, me encantaría trabajar con diferentes marcas y empresas. Ya sea en el desarrollo de recetas personalizadas, publicaciones patrocinadas, embajadora de marca, etc. Envíame un correo electrónico a <b>info@littleñams.com </b> si deseas trabajar juntos.</p>
           </div>
 
-          <form class="py-4 fw-bold" style="font-family: 'Roboto', sans-serif; letter-spacing: 0;">
+          <form class="py-4 fw-bold">
             <div class="mb-3">
                 <label for="info-nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="info-nombre">
@@ -125,7 +125,7 @@
           <!-- Conoce a Gaby -->
           <section>
             <div class=" d-flex justify-content-center align-items-center">
-              <a href="../pages/sobre-mi.html"><img class="img-fluid img-thumb-gaby gradiente" src="../images/gaby-melendez.jpeg" alt="Conoce a Gaby" style="width:280px; height:auto;"></a>
+              <a href="../pages/sobre-mi.html" class="d-flex justify-content-center"><img class="img-thumb-gaby gradiente w-75" src="../images/gaby-melendez.jpeg" alt="Conoce a Gaby"></a>
             </div>
   
             <div class="d-flex flex-column justify-content-center align-items-center">
@@ -175,7 +175,7 @@
           </section>
 
           <!-- Suscripción -->
-          <section style="border:none;">
+          <section class="sin-borde">
 
             <h2 class="mt-4 text-center" >No te pierdas de ninguna Novedad</h2>
   
@@ -198,25 +198,25 @@
   <!-- Footer -->
   <footer>
     <div class="container-footer">
-      <div class="row g-3 d-flex flex-sm-column flex-md-column justify-content-md-center align-content-md-center flex-lg-row flex-xl-row" style="background-color: #D4E09B; padding-top:14px; padding-bottom:30px;">
+      <div class="row g-3 d-flex flex-sm-column flex-md-column justify-content-md-center align-content-md-center flex-lg-row flex-xl-row">
         <div class="col-md-6 d-flex flex-wrap justify-content-center align-items-center">
 
           <div class="redes-sociales d-flex flex-wrap mx-3 mb-2">
-            <a class="text-decoration-none" style="color:#444;" href="https://www.instagram.com/bakeandshareok"><i class="fa-brands fa-instagram hover-footer px-2"></i></a>
-            <a class="text-decoration-none" style="color:#444;" href="https://www.facebook.com/bakeandshareok"><i class="fa-brands fa-facebook-f hover-footer px-2"></i></a>
-            <a class="text-decoration-none" style="color:#444;" href="https://www.pinterest.com/bakeandshareok"><i class="fa-brands fa-pinterest-p hover-footer px-2"></i></a>
+            <a class="text-decoration-none" href="https://www.instagram.com/bakeandshareok"><i class="fa-brands fa-instagram hover-footer px-2"></i></a>
+            <a class="text-decoration-none" href="https://www.facebook.com/bakeandshareok"><i class="fa-brands fa-facebook-f hover-footer px-2"></i></a>
+            <a class="text-decoration-none" href="https://www.pinterest.com/bakeandshareok"><i class="fa-brands fa-pinterest-p hover-footer px-2"></i></a>
           </div>
 
           <div class="footer-menu d-flex flex-wrap mx-3">
-            <a class="text-decoration-none" style="color:#444; font-size: 12px;" href=""><p class="hover-footer pe-4 mb-0">Términos de Uso</p></a>
-            <a class="text-decoration-none" style="color:#444; font-size: 12px;" href=""><p class="hover-footer pe-4 mb-0">Políticas de Privacidad</p></a>
+            <a class="text-decoration-none" href=""><p class="p-footer hover-footer pe-4 mb-0">Términos de Uso</p></a>
+            <a class="text-decoration-none" href=""><p class="p-footer hover-footer pe-4 mb-0">Políticas de Privacidad</p></a>
           </div>
 
         </div>
 
 
         <div class="col-md-6 d-flex flex-wrap justify-content-center align-items-center">
-          <p class="mb-0" style="font-size: 12px;">Copyright © 2022 - All Rights Reserved - Little Ñams</p>
+          <p class="p-footer mb-0">Copyright © 2022 - All Rights Reserved - Little Ñams</p>
 
         </div>
       </div>
