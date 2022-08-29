@@ -91,7 +91,8 @@ h3{
 }
 
 .h3-receta{
-    font-size: 16px;
+    margin-top: 30px;
+    font-size: 18px;
     text-align: left;
 }
 
@@ -101,6 +102,15 @@ h3{
 }
 
 /*** Otras Etiquetas Generales ***/
+a{
+    color:#444;
+}
+
+form{
+    font-family: 'Roboto', sans-serif; 
+    letter-spacing: 0;
+}
+
 .font-nav{
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -118,14 +128,6 @@ p{
     font-size: 12px;
 }
 
-form{
-    font-family: 'Roboto', sans-serif; 
-    letter-spacing: 0;
-}
-
-a{
-    color:#444;
-}
 
 /***  Imagen Pequeña ***/
 .img-thumb-pequeño{
@@ -533,18 +535,32 @@ a{
 }
 
 /* Recipe Card */
-.receta{
+.receta-card{
     border: .5px solid #e4e4e4;
     padding: 30px 20px;
     background-color: #fcfcfcbf;
 }
 
 .img-receta-card{
-    background:url(../images/muffins-avena-chocolate.jpeg) no-repeat 50% 50%; 
-    background-size:cover; 
     height: 150px;
+    background:url(../images/muffins-avena-chocolate.jpeg) no-repeat 50% 50%; 
+    background-size: cover; 
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
+.borde-receta-tiempos{
+    border-right: 1px solid #e4e4e4;
+}
+
+.p-receta-ing{
+    margin-top: 1px;
+    line-height: 1.4;
+}
+.p-receta-met{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
 
 
 /* ----------- MEDIA QUERIES ---------- */
@@ -643,7 +659,7 @@ a{
 }
 
 /* ----- 768 ----- */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .img-thumb-mediano{
         width: 240px;
     }
@@ -709,6 +725,11 @@ a{
         margin-top:0px; 
         padding-top: 30px; 
         border-top: .5px solid #227c9d55;
+    }
+
+    .borde-receta-tiempos{
+        border-right: none;
+        border-bottom: 1px solid #e4e4e4;
     }
 }
 
