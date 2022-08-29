@@ -1,12 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import"./partials/reset";
+@import"./partials/variables";
 
 body{
     width: 100%;
@@ -51,7 +45,7 @@ h1{
 /*** H2 ***/
 h2{
     margin-bottom: 30px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: $fontRobotoC;
     font-size: 20px;
     font-weight: 600;
     text-align: left;
@@ -65,14 +59,14 @@ h2{
 }
 
 .h2-post{
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontRoboto;
     text-align: left;
     text-transform: capitalize;
 }
 
 /*** H3 ***/
 h3{
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontRoboto;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: .1px;
@@ -84,7 +78,7 @@ h3{
     margin-bottom: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: 'Roboto Condensed', sans-serif;    
+    font-family: $fontRobotoC;    
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -106,7 +100,7 @@ a{
 }
 
 form{
-    font-family: 'Roboto', sans-serif; 
+    font-family: $fontRoboto; 
     letter-spacing: 0;
 }
 
@@ -116,7 +110,7 @@ form{
 
 p{
     margin-bottom: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontRoboto;
     font-size: 16px;
     font-weight: normal;
     line-height: 1.8;
@@ -175,10 +169,10 @@ p{
 .botones-accion{
     display: inline-block;
     padding: 5px 15px;
-    background-color: #D4E09B;
+    background-color: $mainColor;
     border: 1px solid #444;
     border-radius: 6px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: $fontRobotoC;
     font-size: 14px;
     font-weight: bold;
     color: #444;
@@ -200,7 +194,7 @@ p{
     margin-top: 30px;
     border: 1px solid #444;
     border-radius: 6px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: $fontRobotoC;
     font-size: 14px;
     font-weight: bold;
     color: #444;
@@ -213,7 +207,7 @@ p{
 
 .botones-ir:hover{
     padding: 10px 15px;
-    background-color: #D4E09B;
+    background-color: $mainColor;
     border-color: #444;
     color: #444;
     transform: translateY(-4px);
@@ -237,8 +231,8 @@ p{
 }
 
 .hover-redes:hover{
-    background-color: #D4E09B;
-    border-color:#D4E09B;
+    background-color: $mainColor;
+    border-color: $mainColor;
     color: #fff;
 }
 
@@ -253,7 +247,7 @@ p{
 
 /*** Hover Títulos ***/
 .hover-verde:hover{
-    color: #D4E09B;
+    color: $mainColor;
 }
 
 /*** Hover Redes Sociales ***/
@@ -284,7 +278,7 @@ p{
     width: 180px;
     height: max-content;
     border: 1px solid #444;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: $fontRobotoC;
     font-size: 14px;
     color: #444;
     letter-spacing: 1.5px;
@@ -296,7 +290,7 @@ p{
 
 .link-tag:hover{
     padding-inline: 12px;
-    background-color: #D4E09B;
+    background-color: $mainColor;
     border-color: #444;
     color: #444;
     transform: translateY(-2px);
@@ -348,7 +342,7 @@ p{
 }
 
 .subrayado-menu3{
-    border-bottom: 5px solid #D4E09B;
+    border-bottom: 5px solid $mainColor;
 }
 
 
@@ -365,7 +359,7 @@ p{
     --bs-btn-active-bg: #F6F4D2;
     --bs-btn-active-border-color: #444;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #D4E09B;
+    --bs-btn-disabled-color: $mainColor;
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #444;
     --bs-gradient: none;
@@ -373,7 +367,7 @@ p{
 
 .nav-box-buscar{
     border: 1px solid #444;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontRoboto;
 }
 
 .nav-boton-buscar{
@@ -386,7 +380,7 @@ p{
     width: 100%;
     padding-top:30px;
     padding-bottom:30px;
-    background-color: #D4E09B;
+    background-color: $mainColor;
 }
 
 .hover-footer:hover{
@@ -415,8 +409,8 @@ p{
 /* Dropdown */
 .btn-nams {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #D4E09B;
-    --bs-btn-border-color: #D4E09B;
+    --bs-btn-bg: $mainColor;
+    --bs-btn-border-color: $mainColor;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #d4e09bd0;
     --bs-btn-hover-border-color: #d4e09bd0;
@@ -465,7 +459,7 @@ p{
 }
 
 .titulo-categorias:hover{
-    color: #D4E09B;
+    color: $mainColor;
 }
 
 .grid-categorias li a img:hover{
@@ -507,7 +501,7 @@ p{
 /* ----------- PÁGINA POST RECETAS ---------- */
 .post-wrap{
     margin-right: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontRoboto;
 }
 
 .categoria-post a{
@@ -516,7 +510,7 @@ p{
 }
 
 .categoria-post a:hover{
-    color: #D4E09B
+    color: $mainColor;
 }
 
 .contenido-post a{
@@ -608,12 +602,12 @@ p{
         color:#444;
         border-radius: 10px;
 
-        background-color: #D4E09B;
+        background-color: $mainColor;
         --bs-nav-link-hover-color: #F6F4D2;
     }
 
     .nav-item{
-        font-family: 'Roboto', sans-serif;
+        font-family: $fontRoboto;
         text-transform: capitalize;
         letter-spacing: 0;
     }
@@ -642,7 +636,7 @@ p{
     }
 
     .grid-categorias {
-        padding-inline:110px;
+        padding-inline: 110px;
         grid-column-gap: 16px;  
     }
 
