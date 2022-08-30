@@ -1,10 +1,10 @@
-
 @import"./partials/reset";
 @import"./partials/variables";
+@import"./partials/extend";
 
 body{
     width: 100%;
-    color: #444;   
+    color: $colorGris;   
 }
 
 nav{
@@ -34,7 +34,7 @@ section{
 h1{
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: 'Cabin Sketch', cursive;
+    font-family: $fontCabin;
     font-size: 30px;
     font-weight: 600;
     text-align: left;
@@ -54,7 +54,7 @@ h2{
 }
 
 .h2-cabin{
-    font-family: 'Cabin Sketch', cursive; 
+    font-family: $fontCabin; 
     font-size: 26px;
 }
 
@@ -96,7 +96,7 @@ h3{
 
 /*** Otras Etiquetas Generales ***/
 a{
-    color:#444;
+    color:$colorGris;
 }
 
 form{
@@ -166,50 +166,18 @@ p{
 }
 
 /***  Botones Acción ***/
-.botones-accion{
-    display: inline-block;
-    padding: 5px 15px;
-    background-color: $mainColor;
-    border: 1px solid #444;
-    border-radius: 6px;
-    font-family: $fontRobotoC;
-    font-size: 14px;
-    font-weight: bold;
-    color: #444;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
 .botones-accion:hover{
     cursor: pointer;
     background-color: #d4e09bd0;
-    color: #444;
+    color: $colorGris;
 }
 
 /***  Botones Ir ***/
-.botones-ir{  
-    display: inline-block;
-    padding: 10px 15px;
-    margin-top: 30px;
-    border: 1px solid #444;
-    border-radius: 6px;
-    font-family: $fontRobotoC;
-    font-size: 14px;
-    font-weight: bold;
-    color: #444;
-    letter-spacing: 1.5px;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    transition: all .3s;
-}
-
 .botones-ir:hover{
     padding: 10px 15px;
     background-color: $mainColor;
-    border-color: #444;
-    color: #444;
+    border-color: $colorGris;
+    color: $colorGris;
     transform: translateY(-4px);
 }
 
@@ -227,7 +195,7 @@ p{
 
 .icono-redes{
     width: 100%;
-    color: #444;
+    color: $colorGris;
 }
 
 .hover-redes:hover{
@@ -241,7 +209,7 @@ p{
     width: 200px; 
     height: 33px; 
     padding-left:8px;
-    border: 1px solid #444;
+    border: 1px solid $colorGris;
     border-radius: 6px;
 }
 
@@ -268,7 +236,7 @@ p{
 .seccion-tags ul li a{
     font-size:13px;
     text-decoration: none;
-    color: #444;
+    color: $colorGris;
 }
 
 .link-tag{
@@ -277,10 +245,10 @@ p{
     padding: 6px 10px;
     width: 180px;
     height: max-content;
-    border: 1px solid #444;
+    border: 1px solid $colorGris;
     font-family: $fontRobotoC;
     font-size: 14px;
-    color: #444;
+    color: $colorGris;
     letter-spacing: 1.5px;
     text-decoration: none;
     text-transform: uppercase;
@@ -291,8 +259,8 @@ p{
 .link-tag:hover{
     padding-inline: 12px;
     background-color: $mainColor;
-    border-color: #444;
-    color: #444;
+    border-color: $colorGris;
+    color: $colorGris;
     transform: translateY(-2px);
 }
 
@@ -322,12 +290,16 @@ p{
     }
 }
 
+.navbar{
+    --bs-navbar-active-color: gray;
+}
+
 .navbar-nav{
     --bs-nav-link-hover-color: #98a9b0;
 }
 
 .nav-link{
-    color: #444;
+    color: $colorGris;
     font-size: 1.1rem;
     letter-spacing: 0;   
     margin-inline: .4rem;
@@ -366,7 +338,7 @@ p{
 }   
 
 .nav-box-buscar{
-    border: 1px solid #444;
+    border: 1px solid $colorGris;
     font-family: $fontRoboto;
 }
 
@@ -384,7 +356,7 @@ p{
 }
 
 .hover-footer:hover{
-    color:gray
+    color:gray;
 }
 
 
@@ -455,7 +427,7 @@ p{
 .grid-categorias li a{
     text-align: center;
     text-decoration: none;
-    color: #444;
+    color: $colorGris;
 }
 
 .titulo-categorias:hover{
@@ -506,7 +478,7 @@ p{
 
 .categoria-post a{
     text-decoration: none;
-    color: #444;
+
 }
 
 .categoria-post a:hover{
@@ -586,7 +558,7 @@ p{
 }
 
 /* ----- 992 ----- */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 
     main{
         margin-left: 10px;
@@ -599,7 +571,7 @@ p{
         padding-inline: 2rem;
         padding-top: .5rem;
         padding-bottom: 1rem;
-        color:#444;
+        color: $colorGris;
         border-radius: 10px;
 
         background-color: $mainColor;
