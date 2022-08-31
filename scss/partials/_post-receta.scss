@@ -1,0 +1,70 @@
+.post-wrap{
+    margin-right: 30px;
+    font-family: $fontRoboto;
+}
+
+.categoria-post a{
+    text-decoration: none;
+
+    &:hover{
+        color: $mainColor;
+    }
+
+}
+
+.contenido-post a{
+    font-weight: 500;
+    text-decoration: none; 
+    color:#227C9D;
+    font-weight: bold; 
+
+    &:hover{
+        color:#444;
+    }
+}
+
+.h2-post{
+    font-family: $fontRoboto;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+/* Recipe Card */
+.receta-card{
+    border: .5px solid #e4e4e4;
+    padding: 30px 20px;
+    background-color: #fcfcfcbf;
+
+    .img-receta-card{
+        height: 150px;
+        background:url(../images/muffins-avena-chocolate.jpeg) no-repeat 50% 50%; 
+        background-size: cover; 
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    }
+}
+
+.borde-receta-tiempos{
+    border-right: 1px solid #e4e4e4;
+}
+
+.h3-receta{
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.p-receta-ing{
+    margin-top: 1px;
+    line-height: 1.4;
+}
+.p-receta-met{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Form Comentarios */
+.h3-comentario{
+    text-transform: uppercase;
+    text-align: left;
+}

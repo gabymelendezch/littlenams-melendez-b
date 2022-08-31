@@ -59,6 +59,10 @@ h3 {
   letter-spacing: .1px;
   text-align: center; }
 
+/*ancho donde está el <a> h3 página inicio*/
+.h3-link {
+  width: 240px; }
+
 /*** Otras Etiquetas Generales ***/
 a {
   color: #444; }
@@ -85,6 +89,12 @@ p {
     opacity: 0.6;
     transform: scale(1.01); }
 
+/*tamaño <a> imagen pequeña*/
+.img-link {
+  width: max-content;
+  padding-left: 0;
+  padding-right: 0; }
+
 /***  Imagen Mediana ***/
 .img-thumb-mediano {
   width: 320px;
@@ -107,6 +117,11 @@ p {
   margin: 10px auto 20px;
   display: block;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; }
+
+/*** Gradiente Imágenes ***/
+.gradiente {
+  padding: 10px;
+  background: linear-gradient(180deg, #d4e09b 5%, #e7e8c4 80%); }
 
 /*** Botones Redes ***/
 .botones-redes {
@@ -199,10 +214,14 @@ p {
 nav {
   border-bottom: .5px solid #227c9d55; }
 
+.navbar {
+  --bs-navbar-active-color: gray; }
+
 .espacio-x {
   padding-right: 3rem;
   padding-left: 3rem; }
 
+/*logo*/
 .animacion-logo {
   text-align: center;
   animation-name: efecto__logo;
@@ -217,14 +236,12 @@ nav {
     transform: rotate(0deg);
     transform: scale(1); } }
 
-.navbar {
-  --bs-navbar-active-color: gray; }
+/*elementos del menú colapsable*/
+.font-nav {
+  font-family: 'Roboto Condensed', sans-serif; }
 
 .navbar-nav {
   --bs-nav-link-hover-color: #98a9b0; }
-
-.font-nav {
-  font-family: 'Roboto Condensed', sans-serif; }
 
 .nav-link {
   color: #444;
@@ -279,21 +296,7 @@ nav {
 .p-footer {
   font-size: 12px; }
 
-/* ----------- PAGINA DE INICIO ---------- */
-.gradiente {
-  padding: 10px;
-  background: linear-gradient(180deg, #d4e09b 5%, #e7e8c4 80%); }
-
-.img-link {
-  width: max-content;
-  padding-left: 0;
-  padding-right: 0; }
-
-.h3-link {
-  width: 240px; }
-
-/* ----------- PÁGINA RECETAS ---------- */
-/* Dropdown */
+/* Dropdown Menu */
 .btn-nams {
   --bs-btn-color: #fff;
   --bs-btn-bg: #D4E09B;
@@ -315,10 +318,9 @@ nav {
 .dropdown-item {
   width: 180px;
   color: #8eaf96; }
-
-.dropdown-item:hover {
-  color: #444;
-  background-color: var(--bs-dropdown-link-hover-bg); }
+  .dropdown-item:hover {
+    color: #444;
+    background-color: var(--bs-dropdown-link-hover-bg); }
 
 /* Grid Recetas Categorías */
 .grid-categorias {
@@ -329,33 +331,27 @@ nav {
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 30px;
   justify-content: center; }
+  .grid-categorias li {
+    width: 240px;
+    list-style: none; }
+    .grid-categorias li a {
+      text-align: center;
+      text-decoration: none;
+      color: #444; }
+      .grid-categorias li a .titulo-categorias {
+        display: block;
+        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: "Roboto Condensed", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+        .grid-categorias li a .titulo-categorias:hover {
+          color: #D4E09B; }
+      .grid-categorias li aimg:hover {
+        opacity: 0.6;
+        transform: scale(1.01); }
 
-.grid-categorias li {
-  width: 240px;
-  list-style: none; }
-
-.grid-categorias li a {
-  text-align: center;
-  text-decoration: none;
-  color: #444; }
-
-.titulo-categorias {
-  display: block;
-  margin-bottom: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px; }
-
-.titulo-categorias:hover {
-  color: #D4E09B; }
-
-.grid-categorias li a img:hover {
-  opacity: 0.6;
-  transform: scale(1.01); }
-
-/* ----------- PÁGINA BLOG E EBOOK ---------- */
 .contenedor-posts-blog {
   margin-top: 60px;
   padding-bottom: 15px;
@@ -375,42 +371,38 @@ nav {
   text-align: justify;
   line-height: 1.5; }
 
-/* ----------- PÁGINA POST RECETAS ---------- */
 .post-wrap {
   margin-right: 30px;
   font-family: "Roboto", sans-serif; }
 
 .categoria-post a {
   text-decoration: none; }
-
-.categoria-post a:hover {
-  color: #D4E09B; }
-
-.h2-post {
-  font-family: "Roboto", sans-serif;
-  text-align: left;
-  text-transform: capitalize; }
+  .categoria-post a:hover {
+    color: #D4E09B; }
 
 .contenido-post a {
   font-weight: 500;
   text-decoration: none;
   color: #227C9D;
   font-weight: bold; }
+  .contenido-post a:hover {
+    color: #444; }
 
-.contenido-post a:hover {
-  color: #444; }
+.h2-post {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  text-transform: capitalize; }
 
 /* Recipe Card */
 .receta-card {
   border: .5px solid #e4e4e4;
   padding: 30px 20px;
   background-color: #fcfcfcbf; }
-
-.img-receta-card {
-  height: 150px;
-  background: url(../images/muffins-avena-chocolate.jpeg) no-repeat 50% 50%;
-  background-size: cover;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; }
+  .receta-card .img-receta-card {
+    height: 150px;
+    background: url(../images/muffins-avena-chocolate.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; }
 
 .borde-receta-tiempos {
   border-right: 1px solid #e4e4e4; }
@@ -429,6 +421,7 @@ nav {
   margin-bottom: 10px;
   line-height: 1.4; }
 
+/* Form Comentarios */
 .h3-comentario {
   text-transform: uppercase;
   text-align: left; }
@@ -514,10 +507,9 @@ nav {
   /*grid categorías*/
   .grid-categorias {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(8, 1fr); }
-  .grid-categorias {
-    padding-inline: 129px;
-    grid-column-gap: 8px; }
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 8px;
+    padding-inline: 129px; }
   .titulo-categorias {
     margin-bottom: 20px; }
   /* Página Blog e Ebook */

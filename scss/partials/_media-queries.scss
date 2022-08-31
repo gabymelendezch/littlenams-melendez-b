@@ -1,0 +1,320 @@
+/* ----------- MEDIA QUERIES ---------- */
+
+/* ----- 1200 ----- */
+@media only screen and (max-width: 1200px) {
+    main{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    /* Nav Bar */
+    .espacio-x{
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+}
+
+/* ----- 1050 ----- */
+@media only screen and (max-width: 1050px) {
+
+    /* Página Recetas */
+    .grid-categorias {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(6,1fr);
+    }
+
+    /* Página Contacto */
+    .box-form-aside{
+        width: 150px; 
+    }
+}
+
+/* ----- 992 ----- */
+@media only screen and (max-width: 991px) {
+
+    main{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    /* Nav Bar */
+    .navbar-nav{
+        margin-top: 1rem;
+        padding-inline: 2rem;
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+        color: $colorGris;
+        border-radius: 10px;
+
+        background-color: $mainColor;
+        --bs-nav-link-hover-color: #F6F4D2;
+    }
+
+    .nav-item{
+        font-family: $fontRoboto;
+        text-transform: capitalize;
+        letter-spacing: 0;
+    }
+
+    .navbar-nav .nav-link.active{
+        color: #fff;
+    }
+
+    .nav-link{
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .subrayado-menu1, .subrayado-menu2, .subrayado-menu3{
+        border-bottom:solid .5px #F6F4D2;
+    }
+
+    .navbar-collapse{
+        margin-inline: 2rem;
+    }
+
+    /* Página de Inicio */
+    .img-thumb-gaby{
+        width: 300px;
+        height: auto;
+    }
+
+    .grid-categorias {
+        padding-inline: 110px;
+        grid-column-gap: 16px;  
+    }
+
+    /* Página de Contacto */
+    .box-form-aside{
+        width: 200px;
+        margin-bottom: 15px; 
+    }
+
+}
+
+/* ----- 768 ----- */
+@media only screen and (max-width: 767px) {
+    .img-thumb-mediano{
+        width: 240px;
+    }
+
+    /* Nav Bar */
+    .espacio-x{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navbar-collapse{
+        margin-inline: 1rem;
+    }
+
+    /* Página Recetas */
+
+    /*dropdown menu*/
+    .btn {
+        width:70vw;
+        margin-left:.5rem;
+    }
+
+    .dropdown-menu{
+        width:70vw;
+    }
+
+    /*grid categorías*/
+    .grid-categorias {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8,1fr);
+        grid-column-gap: 8px;
+        padding-inline: 129px;
+    }
+
+    .titulo-categorias{
+        margin-bottom: 20px;
+    }
+
+    /* Página Blog e Ebook */
+    .contenedor-posts-blog {
+        column-gap: 8px;
+        row-gap: 30px;
+    }
+
+    .h3-link-med{
+        width: 240px;
+    }
+    
+    .texto-post{
+        width: 240px;
+        padding-inline:12px;
+    }
+
+    /* Página Post Receta */
+    .post-wrap{
+        margin-right: 0px;
+    }
+
+    .borde-sidebar{
+        margin-top:0px; 
+        padding-top: 30px; 
+        border-top: .5px solid #227c9d55;
+    }
+
+    .borde-receta-tiempos{
+        border-right: none;
+        border-bottom: 1px solid #e4e4e4;
+    }
+}
+
+/* ----- 500 ----- */
+@media only screen and (max-width: 532px) {
+    main{
+        margin-inline: 0px;
+    }
+
+    .animacion-logo{
+        width: 175px;
+    }
+
+    .img-thumb-pequeño{
+        width: 200px;
+    }
+
+    .img-thumb-mediano{
+        width: 200px;
+    }
+
+
+    h2{
+        text-align: center;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    /* Nav Bar */
+    .espacio-x{
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+
+    .navbar-collapse{
+        margin-inline: .5rem;
+    }
+    
+    /* Página Inicio */
+    .h3-link{
+        width: 200px;
+    }
+
+    /*** Página Recetas */
+    .grid-categorias li{
+        width: 200px;
+    }
+
+    /* Página Blog e Ebook */
+    .h3-link-med{
+        width: 200px;
+    }
+    
+    .texto-post{
+        width: 200px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+}
+
+/* ----- 460 ----- */
+@media only screen and (max-width: 460px) {
+    .img-thumb-pequeño{
+        width: 165px;
+    }
+
+    /* Página Inicio */
+    .h3-link{
+        width: 165px;
+    }
+
+    /* Página Recetas */
+    .grid-categorias {
+        padding-inline: 40px;
+    }
+
+    .grid-categorias li{
+        width: 165px;
+    }
+
+    .titulo-categorias{
+        margin-bottom: 10px;
+    }
+
+    /* Página Blog */
+    .contenedor-posts-blog .post-blog a img{
+        width: 165px;
+    }
+
+    .h3-link-med{
+        width: 165px;
+    }
+    
+    .texto-post{
+        width: 165px;
+    }
+} 
+
+/* ----- 360 ----- */
+@media only screen and (max-width: 360px) {
+    h3{
+        font-size: 18px;
+    }
+    
+    .img-thumb-pequeño{
+        width: 240px;
+    }
+
+    /* Página de Inicio */
+    .box-form{
+        width: 140px; 
+    }
+
+    .h3-link{
+        width: 240px;
+    }
+
+    /* Página Recetas */
+    .grid-categorias {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(16,1fr);
+        padding-inline: 56px;
+    }
+
+    .grid-categorias li{
+        width: 240px;
+    }
+
+    .titulo-categorias{
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
+     /* Página Blog */
+     .contenedor-posts-blog .post-blog a img{
+        width: 240px;
+    }
+
+    .h3-link-med{
+        width: 240px;
+    }
+    
+    .texto-post{
+        width: 240px;
+        text-align: justify;
+        font-size: initial;
+    }
+
+    /* Página de Contacto */
+    .box-form-aside{
+        width: 150px;
+    }
+}

@@ -3,11 +3,16 @@ nav{
     border-bottom: .5px solid #227c9d55;
 }
 
+.navbar{
+    --bs-navbar-active-color: gray;
+}
+
 .espacio-x{
     padding-right: 3rem;
     padding-left: 3rem;
 }
 
+/*logo*/
 .animacion-logo{
     text-align: center;
 
@@ -27,16 +32,13 @@ nav{
     }
 }
 
-.navbar{
-    --bs-navbar-active-color: gray;
+/*elementos del menú colapsable*/
+.font-nav{
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .navbar-nav{
     --bs-nav-link-hover-color: #98a9b0;
-}
-
-.font-nav{
-    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav-link{

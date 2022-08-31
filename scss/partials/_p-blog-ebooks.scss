@@ -1,0 +1,22 @@
+.contenedor-posts-blog{
+    margin-top: 60px;
+    padding-bottom:15px;
+
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.h3-link-med{
+    width: 320px;
+    height: 30px;
+    margin: 25px 0px 25px 0px;
+}
+
+.texto-post {
+    width: 320px;
+    height: 90px;
+    overflow: hidden;
+    padding-inline: 8px;
+    text-align: justify;
+    line-height: 1.5;
+}

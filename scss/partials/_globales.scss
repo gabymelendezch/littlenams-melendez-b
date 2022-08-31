@@ -58,6 +58,10 @@ h3{
     letter-spacing: .1px;
     text-align: center;
 }
+/*ancho donde está el <a> h3 página inicio*/
+.h3-link{
+    width: 240px;
+}
 
 /*** Otras Etiquetas Generales ***/
 a{
@@ -91,6 +95,12 @@ p{
         transform:scale(1.01);
     }
 }
+/*tamaño <a> imagen pequeña*/
+.img-link{
+    width: max-content;
+    padding-left:0;
+    padding-right:0;
+}
 
 /***  Imagen Mediana ***/
 .img-thumb-mediano{
@@ -119,6 +129,12 @@ p{
     margin: 10px auto 20px;
     display: block;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+/*** Gradiente Imágenes ***/
+.gradiente{
+    padding:10px;
+    background: linear-gradient(180deg, rgba(212,224,155,1) 5%, rgba(231,232,196,1) 80%);
 }
 
 /*** Botones Redes ***/
@@ -188,5 +204,3 @@ p{
     }
 
 }
-
-

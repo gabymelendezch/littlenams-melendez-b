@@ -1,0 +1,74 @@
+/* Dropdown Menu */
+.btn-nams {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #D4E09B;
+    --bs-btn-border-color: #D4E09B;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d4e09bd0;
+    --bs-btn-hover-border-color: #d4e09bd0;
+    --bs-btn-focus-shadow-rgb: 212,224,155; /*sombra alrededor del botón*/
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #d4e09bd0;
+    --bs-btn-active-border-color: #d4e09bd0;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #d4e09bd0;
+    --bs-btn-disabled-border-color: #d4e09bd0;
+
+    width:180px;
+}
+
+.dropdown-item{
+    width: 180px;
+    color:#8eaf96;
+
+    &:hover{
+        color: #444;
+        background-color: var(--bs-dropdown-link-hover-bg);
+    }
+}
+
+
+/* Grid Recetas Categorías */
+.grid-categorias {
+    margin-bottom: 0;
+    padding-inline: 90px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-column-gap: 30px;  
+    justify-content: center;
+
+    li{
+        width: 240px;
+        list-style: none;
+
+        a{
+            text-align: center;
+            text-decoration: none;
+            color: $colorGris;
+
+            .titulo-categorias{
+                display: block;
+                margin-bottom: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-family: $fontRobotoC;    
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                
+                &:hover{
+                    color: $mainColor;
+                }
+                    
+            }
+
+            &img:hover{
+                opacity: 0.6;
+                transform:scale(1.01);
+            }
+            
+        }
+        
+    }
+}
