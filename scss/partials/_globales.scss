@@ -1,0 +1,192 @@
+body{
+    width: 100%;
+    color: $colorGris;   
+}
+
+main{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.container{
+    max-width: 100%;
+}
+
+section{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: .5px solid #227c9d55;
+}
+
+.sin-borde{
+    border-bottom: 0px;
+}
+
+/*** H1 ***/
+h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: $fontCabin;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+/*** H2 ***/
+h2{
+    margin-bottom: 30px;
+    font-family: $fontRobotoC;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.h2-cabin{
+    font-family: $fontCabin; 
+    font-size: 26px;
+}
+
+/*** H3 ***/
+h3{
+    font-family: $fontRoboto;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .1px;
+    text-align: center;
+}
+
+/*** Otras Etiquetas Generales ***/
+a{
+    color:$colorGris;
+}
+
+form{
+    font-family: $fontRoboto; 
+    letter-spacing: 0;
+}
+
+p{
+    margin-bottom: 30px;
+    font-family: $fontRoboto;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.8;
+    letter-spacing: .1px;
+}
+
+/***  Imagen Pequeña ***/
+.img-thumb-pequeño{
+    width: 240px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+    transition: all 0.5s;
+
+    &:hover{
+        opacity: 0.6;
+        transform:scale(1.01);
+    }
+}
+
+/***  Imagen Mediana ***/
+.img-thumb-mediano{
+    width: 320px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+    transition: all 0.5s;
+
+    &:hover{
+        opacity: 0.6;
+        transform:scale(1.01);
+    }
+}
+
+/***  Imagen Gaby ***/
+.img-thumb-gaby{
+    width: 340px;
+    height: auto;
+}
+
+/***  Imagen Post Receta/Blog ***/
+.img-post{
+    width: 95%;
+    height: auto;
+    margin: 10px auto 20px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+/*** Botones Redes ***/
+.botones-redes{
+    width: 50px;
+    height: 50px;
+    margin-inline: 7px;
+    background-color: #a4c6acdb;
+    border: 1px solid #a4c6acdb;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hover-redes:hover{
+    background-color: $mainColor;
+    border-color: $mainColor;
+    color: #fff;
+}
+
+/*** Box Formularios ***/
+.box-form, .box-form-aside{
+    width: 200px; 
+    height: 33px; 
+    padding-left:8px;
+    border: 1px solid $colorGris;
+    border-radius: 6px;
+}
+
+/*** Hover Títulos ***/
+.hover-verde:hover{
+    color: $mainColor;
+}
+
+/*** Tags Categorías ***/
+.seccion-tags ul{
+    width: 380px;
+    column-gap: 10px;
+
+    li{
+        display: inline-block;
+    }
+
+    .link-tag{
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 6px 10px;
+        width: 180px;
+        height: max-content;
+        border: 1px solid $colorGris;
+        font-family: $fontRobotoC;
+        font-size: 13px;
+        color: $colorGris;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        text-transform: uppercase;
+    
+        transition: all .3s;
+    
+        &:hover{
+            padding-inline: 12px;
+            background-color: $mainColor;
+            border-color: $colorGris;
+            color: $colorGris;
+            transform: translateY(-2px);
+        }
+    }
+
+}
+
+

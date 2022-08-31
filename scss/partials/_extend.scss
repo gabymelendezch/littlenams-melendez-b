@@ -12,6 +12,11 @@
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
+
+    &:hover{
+        background-color: #d4e09bd0;
+        color: $colorGris;
+    }
 }
 
 /***  Botones Ir ***/
@@ -23,4 +28,12 @@
     letter-spacing: 1.5px;
 
     transition: all .3s;
+
+    &:hover{
+        padding: 10px 15px;
+        background-color: $mainColor;
+        border-color: $colorGris;
+        color: $colorGris;
+        transform: translateY(-4px);
+    }
 }

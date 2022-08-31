@@ -1,0 +1,89 @@
+/* NAV BAR */
+nav{
+    border-bottom: .5px solid #227c9d55;
+}
+
+.espacio-x{
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+.animacion-logo{
+    text-align: center;
+
+    animation-name: efecto__logo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes efecto__logo{
+    from{
+        transform:rotate(-10deg);
+        transform: scale(.4)
+    }
+    to{
+        transform:rotate(0deg);
+        transform: scale(1)
+    }
+}
+
+.navbar{
+    --bs-navbar-active-color: gray;
+}
+
+.navbar-nav{
+    --bs-nav-link-hover-color: #98a9b0;
+}
+
+.font-nav{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav-link{
+    color: $colorGris;
+    font-size: 1.1rem;
+    letter-spacing: 0;   
+    margin-inline: .4rem;
+}
+
+.subrayado-menu1{
+    border-bottom: 5px solid #a4c6ac;
+}
+
+.subrayado-menu2{
+    border-bottom: 5px solid #227C9D;
+}
+
+.subrayado-menu3{
+    border-bottom: 5px solid $mainColor;
+}
+
+
+/* Botón Buscar Nav Bar */
+.btn-outline-success {
+    --bs-btn-color: #444;
+    --bs-btn-border-color: #444;
+    --bs-btn-hover-color: #444;
+    --bs-btn-hover-bg: #F6F4D2;
+    --bs-btn-hover-border-color: #444;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+
+    --bs-btn-active-color: #444;
+    --bs-btn-active-bg: #F6F4D2;
+    --bs-btn-active-border-color: #444;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: $mainColor;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #444;
+    --bs-gradient: none;
+}   
+
+.nav-box-buscar{
+    border: 1px solid $colorGris;
+    font-family: $fontRoboto;
+}
+
+.nav-boton-buscar{
+    width: 50px;
+    margin-left: 0px;
+}

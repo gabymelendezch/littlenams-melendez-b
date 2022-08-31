@@ -1,351 +1,11 @@
-@import"./partials/variables";
-@import"./partials/reset";
+@import"./partials/variables"; // siempre va primero
+
+@import"./partials/reset"; // le sigue reset
+
+@import"./partials/globales";
 @import"./partials/extend";
+@import"./partials/nav";
 
-body{
-    width: 100%;
-    color: $colorGris;   
-}
-
-nav{
-    border-bottom: .5px solid #227c9d55;
-}
-
-main{
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-.container{
-    max-width: 100%;
-}
-
-section{
-    margin-top: 30px;
-    padding-bottom: 30px;
-    border-bottom: .5px solid #227c9d55;
-}
-
-.sin-borde{
-    border-bottom: 0px;
-}
-
-/*** H1 ***/
-h1{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: $fontCabin;
-    font-size: 30px;
-    font-weight: 600;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-}
-
-/*** H2 ***/
-h2{
-    margin-bottom: 30px;
-    font-family: $fontRobotoC;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.h2-cabin{
-    font-family: $fontCabin; 
-    font-size: 26px;
-}
-
-.h2-post{
-    font-family: $fontRoboto;
-    text-align: left;
-    text-transform: capitalize;
-}
-
-/*** H3 ***/
-h3{
-    font-family: $fontRoboto;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: .1px;
-    text-align: center;
-}
-
-.titulo-categorias{
-    display: block;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: $fontRobotoC;    
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.h3-receta{
-    margin-top: 30px;
-    font-size: 18px;
-    text-align: left;
-}
-
-.h3-comentario{
-    text-transform: uppercase;
-    text-align: left;
-}
-
-/*** Otras Etiquetas Generales ***/
-a{
-    color:$colorGris;
-}
-
-form{
-    font-family: $fontRoboto; 
-    letter-spacing: 0;
-}
-
-.font-nav{
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-p{
-    margin-bottom: 30px;
-    font-family: $fontRoboto;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1.8;
-    letter-spacing: .1px;
-}
-
-.p-footer{
-    font-size: 12px;
-}
-
-
-/***  Imagen Pequeña ***/
-.img-thumb-pequeño{
-    width: 240px;
-    height: auto;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-
-    transition: all 0.5s;
-}
-
-.img-thumb-pequeño:hover{
-    opacity: 0.6;
-    transform:scale(1.01);
-}
-
-/***  Imagen Mediana ***/
-.img-thumb-mediano{
-    width: 320px;
-    height: auto;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-
-    transition: all 0.5s;
-}
-
-.img-thumb-mediano:hover{
-    opacity: 0.6;
-    transform:scale(1.01);
-}
-
-/***  Imagen Gaby ***/
-.img-thumb-gaby{
-    width: 340px;
-    height: auto;
-}
-
-/***  Imagen Post Receta/Blog ***/
-.img-post{
-    width: 95%;
-    height: auto;
-    margin: 10px auto 20px;
-    display: block;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-}
-
-/***  Botones Acción ***/
-.botones-accion:hover{
-    cursor: pointer;
-    background-color: #d4e09bd0;
-    color: $colorGris;
-}
-
-/***  Botones Ir ***/
-.botones-ir:hover{
-    padding: 10px 15px;
-    background-color: $mainColor;
-    border-color: $colorGris;
-    color: $colorGris;
-    transform: translateY(-4px);
-}
-
-/*** Botones Redes ***/
-.botones-redes{
-    width: 50px;
-    height: 50px;
-    margin-inline: 7px;
-    background-color: #a4c6acdb;
-    border: 1px solid #a4c6acdb;
-    border-radius: 50%;
-    color: #fff;
-    text-decoration: none;
-}
-
-.icono-redes{
-    width: 100%;
-    color: $colorGris;
-}
-
-.hover-redes:hover{
-    background-color: $mainColor;
-    border-color: $mainColor;
-    color: #fff;
-}
-
-/*** Box Formularios ***/
-.box-form, .box-form-aside{
-    width: 200px; 
-    height: 33px; 
-    padding-left:8px;
-    border: 1px solid $colorGris;
-    border-radius: 6px;
-}
-
-/*** Hover Títulos ***/
-.hover-verde:hover{
-    color: $mainColor;
-}
-
-/*** Hover Redes Sociales ***/
-.hover-pad:hover{
-    padding: 2px;
-}
-
-/*** Tags Categorías ***/
-.seccion-tags ul{
-    width: 380px;
-    column-gap: 10px;
-}
-
-.seccion-tags ul li{
-    display: inline-block;
-}
-
-.seccion-tags ul li a{
-    font-size:13px;
-    text-decoration: none;
-    color: $colorGris;
-}
-
-.link-tag{
-    display: inline-block;
-    margin-bottom: 10px;
-    padding: 6px 10px;
-    width: 180px;
-    height: max-content;
-    border: 1px solid $colorGris;
-    font-family: $fontRobotoC;
-    font-size: 14px;
-    color: $colorGris;
-    letter-spacing: 1.5px;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    transition: all .3s;
-}
-
-.link-tag:hover{
-    padding-inline: 12px;
-    background-color: $mainColor;
-    border-color: $colorGris;
-    color: $colorGris;
-    transform: translateY(-2px);
-}
-
-
-/* NAV BAR */
-.espacio-x{
-    padding-right: 3rem;
-    padding-left: 3rem;
-}
-
-.animacion-logo{
-    text-align: center;
-
-    animation-name: efecto__logo;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes efecto__logo{
-    from{
-        transform:rotate(-10deg);
-        transform: scale(.4)
-    }
-    to{
-        transform:rotate(0deg);
-        transform: scale(1)
-    }
-}
-
-.navbar{
-    --bs-navbar-active-color: gray;
-}
-
-.navbar-nav{
-    --bs-nav-link-hover-color: #98a9b0;
-}
-
-.nav-link{
-    color: $colorGris;
-    font-size: 1.1rem;
-    letter-spacing: 0;   
-    margin-inline: .4rem;
-}
-
-.subrayado-menu1{
-    border-bottom: 5px solid #a4c6ac;
-}
-
-.subrayado-menu2{
-    border-bottom: 5px solid #227C9D;
-}
-
-.subrayado-menu3{
-    border-bottom: 5px solid $mainColor;
-}
-
-
-/* Botón Buscar Nav Bar */
-.btn-outline-success {
-    --bs-btn-color: #444;
-    --bs-btn-border-color: #444;
-    --bs-btn-hover-color: #444;
-    --bs-btn-hover-bg: #F6F4D2;
-    --bs-btn-hover-border-color: #444;
-    --bs-btn-focus-shadow-rgb: 25,135,84;
-
-    --bs-btn-active-color: #444;
-    --bs-btn-active-bg: #F6F4D2;
-    --bs-btn-active-border-color: #444;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: $mainColor;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #444;
-    --bs-gradient: none;
-}   
-
-.nav-box-buscar{
-    border: 1px solid $colorGris;
-    font-family: $fontRoboto;
-}
-
-.nav-boton-buscar{
-    width: 50px;
-    margin-left: 0px;
-}
 
 /*** FOOTER ***/
 .container-footer{
@@ -357,6 +17,10 @@ p{
 
 .hover-footer:hover{
     color:gray;
+}
+
+.p-footer{
+    font-size: 12px;
 }
 
 
@@ -430,6 +94,16 @@ p{
     color: $colorGris;
 }
 
+.titulo-categorias{
+    display: block;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: $fontRobotoC;    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .titulo-categorias:hover{
     color: $mainColor;
 }
@@ -464,12 +138,6 @@ p{
     line-height: 1.5;
 }
 
-
-/* ----------- PÁGINA SOBRE MI ---------- */
-
-/* ----------- PÁGINA CONTACTO ---------- */
-
-
 /* ----------- PÁGINA POST RECETAS ---------- */
 .post-wrap{
     margin-right: 30px;
@@ -483,6 +151,12 @@ p{
 
 .categoria-post a:hover{
     color: $mainColor;
+}
+
+.h2-post{
+    font-family: $fontRoboto;
+    text-align: left;
+    text-transform: capitalize;
 }
 
 .contenido-post a{
@@ -514,6 +188,12 @@ p{
     border-right: 1px solid #e4e4e4;
 }
 
+.h3-receta{
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: left;
+}
+
 .p-receta-ing{
     margin-top: 1px;
     line-height: 1.4;
@@ -522,6 +202,11 @@ p{
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 1.4;
+}
+
+.h3-comentario{
+    text-transform: uppercase;
+    text-align: left;
 }
 
 
