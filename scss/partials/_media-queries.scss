@@ -63,7 +63,7 @@
 
     .nav-link{
         color: #fff;
-        font-size: 16px;
+        font-size: map-get($font-sizes,normal);
     }
 
     .subrayado-menu1, .subrayado-menu2, .subrayado-menu3{
@@ -189,7 +189,7 @@
     }
 
     h3{
-        font-size: 16px;
+        font-size: map-get($font-sizes,normal);
     }
 
     /* Nav Bar */
@@ -266,7 +266,7 @@
 /* ----- 360 ----- */
 @media only screen and (max-width: 360px) {
     h3{
-        font-size: 18px;
+        font-size: map-get($font-sizes,h3);
     }
     
     .img-thumb-pequeño{
@@ -295,7 +295,7 @@
 
     .titulo-categorias{
         margin-bottom: 25px;
-        font-size: 18px;
+        font-size: map-get($font-sizes,h3);
     }
 
      /* Página Blog */
@@ -310,7 +310,7 @@
     .texto-post{
         width: 240px;
         text-align: justify;
-        font-size: initial;
+        font-size: map-get($font-sizes,normal);
     }
 
     /* Página de Contacto */
