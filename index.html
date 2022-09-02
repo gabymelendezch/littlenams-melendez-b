@@ -1,283 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Recetas saludables para bebés, niños y familias. Consejos de alimentación, Baby-Led Weaning y crianza respetuosa para ayudar a los padres a transitar y disfrutar esta linda etapa.">
-    <meta name="keywords"  content="recetas saludables, recetas fáciles, recetas para niños, blw bebés, snacks saludables, crianza respetuosa">
+  <meta name="description"
+    content="Recetas saludables para bebés, niños y familias. Consejos de alimentación, Baby-Led Weaning y crianza respetuosa para ayudar a los padres a transitar y disfrutar esta linda etapa.">
+  <meta name="keywords"
+    content="recetas saludables, recetas fáciles, recetas para niños, blw bebés, snacks saludables, crianza respetuosa">
 
-    <!--Font Awesome Icons-->
-    <script src="https://kit.fontawesome.com/6ae03c6937.js" crossorigin="anonymous"></script> 
-    <!--Animate Style-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
-    <!--AOS CSS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
-    <!--Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon-littlenams.png">
-    <title>Recetas Saludables para Bebés, Niños y Familias – Little Ñams</title>
+  <!--Font Awesome Icons-->
+  <script src="https://kit.fontawesome.com/6ae03c6937.js" crossorigin="anonymous"></script>
+  <!--Animate Style-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--AOS CSS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon-littlenams.png">
+  <title>Recetas Saludables para Bebés, Niños y Familias – Little Ñams</title>
 </head>
 
 <body>
 
-    <!-- Menú de Navegación -->
-    <nav class="navbar navbar-expand-lg bg-white espacio-x py-4 sticky-top justify-content-center">
-          
-      <div class="container-fluid justify-content-evenly">
-          <!--logo-->
-          <a class="navbar-brand" href="#">
-            <img class="img-fluid animacion-logo  ms-lg-3 ms-xl-5" src="./images/logo-littlenams-head-2.png" alt="Little Ñams">
+  <!-- Menú de Navegación -->
+  <nav class="navbar navbar-expand-lg bg-white espacio-x py-4 sticky-top justify-content-center">
+
+    <div class="container-fluid justify-content-evenly">
+      <!--logo-->
+      <a class="navbar-brand" href="#">
+        <img class="img-fluid animacion-logo  ms-lg-3 ms-xl-5" src="./images/logo-littlenams-head-2.png"
+          alt="Little Ñams">
+      </a>
+
+      <!--boton del menu-->
+      <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+      <!--elementos del menú colapsable-->
+      <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+        <ul class="navbar-nav font-nav mb-2 mb-lg-0 text-uppercase">
+
+          <li class="nav-item subrayado-menu1">
+            <a class="nav-link" href="./pages/recetas.html">Recetas</a>
+          </li>
+
+          <li class="nav-item subrayado-menu2">
+            <a class="nav-link" href="./pages/blog.html">Blog</a>
+          </li>
+
+          <li class="nav-item subrayado-menu3">
+            <a class="nav-link" href="./pages/ebooks.html">Ebooks</a>
+          </li>
+
+          <li class="nav-item subrayado-menu1">
+            <a class="nav-link" href="./pages/sobre-mi.html">Sobre Mí</a>
+          </li>
+
+          <li class="nav-item subrayado-menu2">
+            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+          </li>
+
+        </ul>
+
+        <form class="d-flex mt-2">
+          <input class="form-control me-1 ps-2 rounded nav-box-buscar" type="search" placeholder="Buscar"
+            aria-label="Search" required>
+          <button class="btn btn-outline-success nav-boton-buscar" type="submit"><i
+              class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Recetas por Edades -->
+    <section class="container">
+      <header>
+        <h1 class="text-center">Recetas Saludables</h1>
+      </header>
+
+      <div class="row justify-content-center g-2 g-md-4">
+        <a href="" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño"
+            src="./images/recetas-bebes.jpg" alt="Recetas de bebés"></a>
+        <a href="" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño"
+            src="./images/recetas-ninos-12-meses.jpg" alt="Recetas niños 12 meses"></a>
+        <a href="" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño"
+            src="./images/recetas-ninos-24-meses.jpg" alt="Recetas niños 24 meses"></a>
+        <a href="" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño"
+            src="./images/recetas-familiares.jpg" alt="Recetas familia"></a>
+      </div>
+
+    </section>
+
+    <!-- Buscar una Receta -->
+    <section class="container">
+      <h2 class="text-center">Encontrar una Receta</h2>
+
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center flex-column">
+
+          <form class="text-center" action="" method="get">
+            <!--llevar a otra página que aparezcan los posts que contengan las palabras claves-->
+            <input type="search" class="box-form" name="buscar-receta-box" required>
+            <input class="botones-accion" type="submit" value="Buscar">
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Recetas por Categorias -->
+    <section class="container align-center">
+      <h2>Recetas por Categoría</h2>
+
+      <div class="row justify-content-center g-2 g-md-4">
+        <a href="./pages/post-receta.html" class="col-md-3 col-sm-6 img-link"><img
+            class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño" src="./images/snacks-dulces.jpg"
+            alt="Snacks dulces">
+          <a href="" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño"
+              src="./images/smoothies.jpg" alt="Smoothies">
+            <a href="" class="col-md-3 col-sm-6 img-link"><img
+                class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño" src="./images/snacks-salados.jpg"
+                alt="Snacks salados">
+              <a href="" class="col-md-3 col-sm-6 img-link"><img
+                  class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño" src="./images/panes.jpg" alt="Panes">
+      </div>
+
+      <div class="text-center">
+        <a class="botones-ir" href="./pages/recetas.html">Ver más categorías</a>
+      </div>
+    </section>
+
+    <!-- Ebook Gratis -->
+    <section class="container-fluid">
+
+      <div class="row justify-content-center">
+
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <a href=""><img class="img-fluid img-thumb-pequeño gradiente opacity-100" src="./images/ebook-gratis.jpeg"
+              alt="Ebook gratis"></a>
+        </div>
+
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+
+          <h2 class="mt-4 mt-lg-2 mt-xl-2 mb-2 mb-lg-3 mb-xl-3 text-center h2-cabin">¡TE REGALO UN EBOOK!</h2>
+
+          <p class="my-3 px-4 text-center"> 10 DELICIOSAS RECETAS</p>
+          <p class="px-sm-4 px-md-4 px-xl-2 text-center">Snacks dulces y salados para que los más pequeños disfruten en
+            su día a día.</p>
+
+          <a class="botones-accion" href="./pages/ebook-gratis-suscripcion.html">Suscríbete</a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Blog -->
+    <section class="container align-center">
+      <h2>Blog</h2>
+      <div class="row justify-content-center g-3 g-md-4 g-sm-3 g-xs-1">
+
+        <div class="col-md-3 col-sm-6  px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-link">
+          <a href="">
+            <img class="img-thumb-pequeño" src="./images/guia-baby-led-weaning.jpg" alt="Guía Baby Led Weaning">
           </a>
-
-          <!--boton del menu-->
-          <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
-          </button>
-
-          <!--elementos del menú colapsable-->
-          <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
-            <ul class="navbar-nav font-nav mb-2 mb-lg-0 text-uppercase">
-
-              <li class="nav-item subrayado-menu1">
-                <a class="nav-link" href="./pages/recetas.html">Recetas</a>
-              </li>
-
-              <li class="nav-item subrayado-menu2">
-                <a class="nav-link" href="pages/blog.html">Blog</a>
-              </li>
-
-              <li class="nav-item subrayado-menu3">
-                <a class="nav-link" href="pages/ebooks.html">Ebooks</a>
-              </li>
-
-              <li class="nav-item subrayado-menu1">
-                <a class="nav-link" href="./pages/sobre-mi.html">Sobre Mí</a>
-              </li>
-
-              <li class="nav-item subrayado-menu2">
-                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-              </li>
-
-            </ul>
-
-            <form class="d-flex mt-2">
-              <input class="form-control me-1 ps-2 rounded nav-box-buscar" type="search" placeholder="Buscar" aria-label="Search" required>
-              <button class="btn btn-outline-success nav-boton-buscar" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button> 
-            </form>
-
-          </div>
-        </div>
-    </nav>
-
-    <main>
-      
-      <!-- Recetas por Edades -->
-      <section class="container"> 
-        <header><h1 class="text-center">Recetas Saludables</h1></header>
-
-        <div class="row justify-content-center g-2 g-md-4">
-          <a href="" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño" src="./images/recetas-bebes.jpg" alt="Recetas de bebés"></a>
-          <a href="" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño" src="./images/recetas-ninos-12-meses.jpg" alt="Recetas niños 12 meses"></a>
-          <a href="" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño" src="./images/recetas-ninos-24-meses.jpg" alt="Recetas niños 24 meses"></a>
-          <a href="" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño" src="./images/recetas-familiares.jpg" alt="Recetas familia"></a>
+          <a href="" class="text-decoration-none">
+            <h3 class="mt-3 pt-1 h3-link hover-verde">Guía Baby Led Weaning</h3>
+          </a>
         </div>
 
-      </section>
-
-      <!-- Buscar una Receta -->
-      <section class="container">
-        <h2 class="text-center">Encontrar una Receta</h2>
-
-        <div class="row">
-          <div class="col-md-12 d-flex justify-content-center flex-column">
-
-            <form class= "text-center" action="" method="get"> <!--llevar a otra página que aparezcan los posts que contengan las palabras claves-->
-                <input type="search" class="box-form" name="buscar-receta-box" required>
-                <input class="botones-accion" type="submit" value="Buscar">
-            </form>
-          </div>
+        <div class="col-md-3 col-sm-6  px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-link">
+          <a href="">
+            <img class="img-thumb-pequeño" src="./images/viandas-saludables.jpg" alt="Ideas de Viandas Saludables">
+          </a>
+          <a href="" class="text-decoration-none">
+            <h3 class="mt-3 pt-1 h3-link hover-verde">Ideas de Viandas Saludables</h3>
+          </a>
         </div>
 
-      </section>  
-
-      <!-- Recetas por Categorias -->
-      <section class="container align-center">
-        <h2>Recetas por Categoría</h2>
-  
-          <div class="row justify-content-center g-2 g-md-4">
-            <a href="./pages/post-receta.html" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño" src="./images/snacks-dulces.jpg" alt="Snacks dulces">
-            <a href="" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño" src="./images/smoothies.jpg" alt="Smoothies">
-            <a href="" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño" src="./images/snacks-salados.jpg" alt="Snacks salados">
-            <a href="" class="col-md-3 col-sm-6 img-link"><img class="px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-thumb-pequeño" src="./images/panes.jpg" alt="Panes">
-          </div>
-
-          <div class="text-center">
-              <a class="botones-ir" href="./pages/recetas.html">Ver más categorías</a>  
-          </div>
-      </section>
-
-      <!-- Ebook Gratis -->
-      <section class="container-fluid">
-
-        <div class="row justify-content-center">
-
-          <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <a href=""><img class="img-fluid img-thumb-pequeño gradiente opacity-100" src="./images/ebook-gratis.jpeg" alt="Ebook gratis"></a>
-          </div>
-      
-          <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-      
-            <h2 class="mt-4 mt-lg-2 mt-xl-2 mb-2 mb-lg-3 mb-xl-3 text-center h2-cabin">¡TE REGALO UN EBOOK!</h2>
-      
-            <p class="my-3 px-4 text-center"> 10 DELICIOSAS RECETAS</p>
-            <p class="px-sm-4 px-md-4 px-xl-2 text-center">Snacks dulces y salados para que los más pequeños disfruten en su día a día.</p>
-      
-            <a class="botones-accion" href="./pages/ebook-gratis-suscripcion.html">Suscríbete</a>
-      
-          </div>
-
+        <div class="col-md-3 col-sm-6  px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-link">
+          <a href="">
+            <img class="img-thumb-pequeño" src="./images/hierbas-especias-comidas.jpg"
+              alt="Hierbas y Especias para las Comidas">
+          </a>
+          <a href="" class="text-decoration-none">
+            <h3 class="mt-3 pt-1 h3-link hover-verde">Hierbas y Especias para las Comidas</h3>
+          </a>
         </div>
 
-      </section>
-
-      <!-- Blog -->
-      <section class="container align-center">
-        <h2>Blog</h2>
-        <div class="row justify-content-center g-3 g-md-4 g-sm-3 g-xs-1">
-
-          <div class="col-md-3 col-sm-6  px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-link">
-            <a href="" class="text-decoration-none hover-verde"> 
-              <img class="img-thumb-pequeño" src="./images/guia-baby-led-weaning.jpg" alt="Guía Baby Led Weaning">
-              <h3 class="mt-3 pt-1 h3-link">Guía Baby Led Weaning</h3>
-            </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6  px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-link">
-            <a href="" class="text-decoration-none hover-verde">
-              <img class="img-thumb-pequeño" src="./images/viandas-saludables.jpg" alt="Ideas de Viandas Saludables">
-              <h3 class="mt-3 pt-1 h3-link">Ideas de Viandas Saludables</h3>
-            </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6  px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-link">
-            <a href="" class="text-decoration-none hover-verde">
-              <img class="img-thumb-pequeño" src="./images/hierbas-especias-comidas.jpg" alt="Hierbas y Especias para las Comidas">
-              <h3 class="mt-3 pt-1 h3-link">Hierbas y Especias para las Comidas</h3>
-            </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-link">
-            <a href="" class="text-decoration-none hover-verde">
-              <img class="img-thumb-pequeño" src="./images/alimentos-ricos-hierro.jpg" alt="Alimentos Ricos en Hierro">
-              <h3 class="mt-3 pt-1 h3-link">Alimentos Ricos en Hierro</h3>
-            </a>
-          </div>
+        <div class="col-md-3 col-sm-6 px-0 mx-xl-3 mx-lg-3 mx-md-2 mx-1 img-link">
+          <a href="">
+            <img class="img-thumb-pequeño" src="./images/alimentos-ricos-hierro.jpg" alt="Alimentos Ricos en Hierro">
+          </a>
+          <a href="" class="text-decoration-none">
+            <h3 class="mt-3 pt-1 h3-link hover-verde">Alimentos Ricos en Hierro</h3>
+          </a>
         </div>
+      </div>
 
-        <div class="text-center">
-          <a class="botones-ir" href="./pages/blog.html">Ver más de Blog</a>  
-        </div>
+      <div class="text-center">
+        <a class="botones-ir" href="./pages/blog.html">Ver más de Blog</a>
+      </div>
 
-      </section>
+    </section>
 
-      <!-- Redes Sociales -->
-      <section class="container">
-        <h2 class="text-center">Sígueme</h2>
+    <!-- Redes Sociales -->
+    <section class="container">
+      <h2 class="text-center">Sígueme</h2>
 
-        <div class="row">
-          <div class="col-md-12 redes-sociales d-flex flex-wrap justify-content-center ">
-            <div class="contenedor-iconos d-flex align-items-center">         
-              <a class="botones-redes hover-redes d-flex justify-content-center align-items-center" href="https://www.instagram.com/bakeandshareok"><i class="fa-brands fa-instagram fa-xl"></i></a>
-              <a class="botones-redes hover-redes d-flex justify-content-center align-items-center" href="https://www.facebook.com/bakeandshareok"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
-              <a class="botones-redes hover-redes d-flex justify-content-center align-items-center" href="https://www.pinterest.com/bakeandshareok"><i class="fa-brands fa-pinterest-p fa-xl"></i></a>
-              <a class="botones-redes hover-redes d-flex justify-content-center align-items-center" href=""><i class="fa-brands fa-youtube fa-lg"></i></a>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <!-- Conoce a Gaby -->
-      <section class="container-fluid" style="padding-top: 15px; padding-bottom: 45px;">
-
-        <div class="row px-4 justify-content-center">
-
-          <div class="col-md-12 col-lg-5 d-flex justify-content-center align-items-center">
-            <a href="./pages/sobre-mi.html"><img class="img-fluid img-thumb-gaby gradiente" src="./images/gaby-melendez.jpeg" alt="Conoce a Gaby"></a>
-          </div>
-
-          <div class="col-md-12 col-lg-7 d-flex flex-column justify-content-center align-items-center">
-            <h2 class="mt-4 mt-lg-2 mt-xl-2 mb-4 ms-0 mx-4 text-center h2-cabin">Conoce a Gaby</h2>
-
-            <p class="mb-3 mx-4 text-center">Bienvenidos a Little Ñams.</p>
-            <p class="mb-3 mx-4 text-center">Soy Gaby, una chica pastelera amante de la naturaleza, el deporte y el chocolate negro. Soy feliz creando recetas saludables. La mayor parte de mi tiempo la paso en mi lugar favorito de casa: la cocina. Te regalo mis recetas para que cocines y compartas con toda la familia y personas que amas. Para saber más sobre mi, </p>
-
-            <a class="botones-ir mt-2" href="./pages/sobre-mi.html">Click Aquí</a>
-          </div>
-
-        </div>
-
-      </section>
-
-      <!-- Suscripción -->
-      <section class="container-fluid sin-borde pb-5">
-
-        <h2 class= "mt-4">No te pierdas de ninguna Novedad</h2>
-
-        <div class="row">
-          <div class="col-md-12 d-flex justify-content-center flex-column">
-            <p class="mb-4">Te comparto semanalmente recetas para toda la familia, llegarán a tu correo electrónico totalmente GRATIS!</p>
-
-            <form class="" action="" method="post">
-              <input type="email" class="me-1 ps-1 box-form" required>
-              <input class="botones-accion" type="submit" value="Suscríbete"> <!--una vez suscrito, escribir un mensaje en el mismo espacio para notificar-->
-            </form>
-
-          </div>
-        </div>      
-
-      </section>
-
-    </main> 
-
-    <!-- Footer -->
-    <footer>
-      <div class="container-fluid container-footer">
-        <div class="row g-3 d-flex flex-sm-column flex-md-column justify-content-md-center align-content-md-center flex-lg-row flex-xl-row">
-          <div class="col-md-6 d-flex flex-wrap justify-content-center align-items-center">
-
-            <div class="redes-sociales d-flex flex-wrap mx-3 mb-2">
-              <a class="text-decoration-none" href="https://www.instagram.com/bakeandshareok"><i class="fa-brands fa-instagram hover-footer px-2"></i></a>
-              <a class="text-decoration-none" href="https://www.facebook.com/bakeandshareok"><i class="fa-brands fa-facebook-f hover-footer px-2"></i></a>
-              <a class="text-decoration-none" href="https://www.pinterest.com/bakeandshareok"><i class="fa-brands fa-pinterest-p hover-footer px-2"></i></a>
-            </div>
-
-            <div class="footer-menu d-flex flex-wrap mx-3">
-              <a class="text-decoration-none" href=""><p class="p-footer hover-footer pe-4 mb-0">Términos de Uso</p></a>
-              <a class="text-decoration-none" href=""><p class="p-footer hover-footer pe-4 mb-0">Políticas de Privacidad</p></a>
-            </div>
-
-          </div>
-
-
-          <div class="col-md-6 d-flex flex-wrap justify-content-center align-items-center">
-            <p class="p-footer mb-0">Copyright © 2022 - All Rights Reserved - Little Ñams</p>
-
+      <div class="row">
+        <div class="col-md-12 redes-sociales d-flex flex-wrap justify-content-center ">
+          <div class="contenedor-iconos d-flex align-items-center">
+            <a class="botones-redes hover-redes d-flex justify-content-center align-items-center"
+              href="https://www.instagram.com/littlenamsok" target="_blank"><i
+                class="fa-brands fa-instagram fa-xl"></i></a>
+            <a class="botones-redes hover-redes d-flex justify-content-center align-items-center"
+              href="https://www.facebook.com/bakeandshareok" target="_blank"><i
+                class="fa-brands fa-facebook-f fa-xl"></i></a>
+            <a class="botones-redes hover-redes d-flex justify-content-center align-items-center"
+              href="https://www.pinterest.com/bakeandshareok" target="_blank"><i
+                class="fa-brands fa-pinterest-p fa-xl"></i></a>
+            <a class="botones-redes hover-redes d-flex justify-content-center align-items-center" href=""
+              target="_blank"><i class="fa-brands fa-youtube fa-lg"></i></a>
           </div>
         </div>
       </div>
-    </footer>
 
-    <!--Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <!--AOS Javascript-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
-     <!--Initialize AOS-->
-    <script>
-        AOS.init();
-    </script>
+    </section>
+
+    <!-- Conoce a Gaby -->
+    <section class="container-fluid" style="padding-top: 15px; padding-bottom: 45px;">
+
+      <div class="row px-4 justify-content-center">
+
+        <div class="col-md-12 col-lg-5 d-flex justify-content-center align-items-center">
+          <a href="./pages/sobre-mi.html"><img class="img-fluid img-thumb-gaby gradiente"
+              src="./images/gaby-melendez.jpeg" alt="Conoce a Gaby"></a>
+        </div>
+
+        <div class="col-md-12 col-lg-7 d-flex flex-column justify-content-center align-items-center">
+          <h2 class="mt-4 mt-lg-2 mt-xl-2 mb-4 ms-0 mx-4 text-center h2-cabin">Conoce a Gaby</h2>
+
+          <p class="mb-3 mx-4 text-center">Bienvenidos a Little Ñams.</p>
+          <p class="mb-3 mx-4 text-center">Soy Gaby, una chica pastelera amante de la naturaleza, el deporte y el
+            chocolate negro. Soy feliz creando recetas saludables. La mayor parte de mi tiempo la paso en mi lugar
+            favorito de casa: la cocina. Te regalo mis recetas para que cocines y compartas con toda la familia y
+            personas que amas. Para saber más sobre mi, </p>
+
+          <a class="botones-ir mt-2" href="./pages/sobre-mi.html">Click Aquí</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Suscripción -->
+    <section class="container-fluid sin-borde pb-5">
+
+      <h2 class="mt-4">No te pierdas de ninguna Novedad</h2>
+
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center flex-column">
+          <p class="mb-4">Te comparto semanalmente recetas para toda la familia, llegarán a tu correo electrónico
+            totalmente GRATIS!</p>
+
+          <form class="" action="" method="post">
+            <input type="email" class="me-1 ps-1 box-form" required>
+            <input class="botones-accion" type="submit" value="Suscríbete">
+            <!--una vez suscrito, escribir un mensaje en el mismo espacio para notificar-->
+          </form>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-fluid container-footer">
+      <div
+        class="row g-3 d-flex flex-sm-column flex-md-column justify-content-md-center align-content-md-center flex-lg-row flex-xl-row">
+        <div class="col-md-6 d-flex flex-wrap justify-content-center align-items-center">
+
+          <div class="redes-sociales d-flex flex-wrap mx-3 mb-2">
+            <a class="text-decoration-none hover-footer" href="https://www.instagram.com/littlenamsok"
+              target="_blank"><i class="fa-brands fa-instagram px-2"></i></a>
+            <a class="text-decoration-none hover-footer" href="https://www.facebook.com/bakeandshareok"
+              target="_blank"><i class="fa-brands fa-facebook-f px-2"></i></a>
+            <a class="text-decoration-none hover-footer" href="https://www.pinterest.com/bakeandshareok"
+              target="_blank"><i class="fa-brands fa-pinterest-p px-2"></i></a>
+          </div>
+
+          <div class="footer-menu d-flex flex-wrap mx-3">
+            <a class="text-decoration-none" href="">
+              <p class="p-footer hover-footer pe-4 mb-0">Términos de Uso</p>
+            </a>
+            <a class="text-decoration-none" href="">
+              <p class="p-footer hover-footer pe-4 mb-0">Políticas de Privacidad</p>
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="col-md-6 d-flex flex-wrap justify-content-center align-items-center">
+          <p class="p-footer mb-0">Copyright © 2022 - All Rights Reserved - Little Ñams</p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!--AOS Javascript-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--Initialize AOS-->
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>
