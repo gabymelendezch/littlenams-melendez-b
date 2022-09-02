@@ -50,13 +50,14 @@ h2{
     font-size: map-get($font-sizes,h2)+6px;
 }
 
+.h2-pages{
+    @include h3-h6;
+    text-transform: capitalize;
+}
+
 /*** H3 ***/
 h3{
-    font-family: $font-roboto;
-    font-size: map-get($font-sizes,h3);
-    font-weight: 600;
-    letter-spacing: .1px;
-    text-align: center;
+    @include h3-h6;
 }
 /*ancho donde está el <a> h3 página inicio*/
 .h3-link{

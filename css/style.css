@@ -51,6 +51,14 @@ h2 {
   font-family: "Cabin Sketch", cursive;
   font-size: 26px; }
 
+.h2-pages {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .1px;
+  text-align: center;
+  text-transform: capitalize; }
+
 /*** H3 ***/
 h3 {
   font-family: "Roboto", sans-serif;
@@ -358,7 +366,7 @@ nav {
   column-gap: 40px;
   row-gap: 40px; }
 
-.h3-link-med {
+.h2-link-med {
   width: 320px;
   height: 30px;
   margin: 25px 0px 25px 0px; }
@@ -522,7 +530,7 @@ nav {
   .contenedor-posts-blog {
     column-gap: 8px;
     row-gap: 30px; }
-  .h3-link-med {
+  .h2-link-med {
     width: 240px; }
   .texto-post {
     width: 240px;
@@ -565,7 +573,7 @@ nav {
   .grid-categorias li {
     width: 200px; }
   /* Página Blog e Ebook */
-  .h3-link-med {
+  .h2-link-med {
     width: 200px; }
   .texto-post {
     width: 200px;
@@ -589,7 +597,7 @@ nav {
   /* Página Blog */
   .contenedor-posts-blog .post-blog a img {
     width: 165px; }
-  .h3-link-med {
+  .h2-link-med {
     width: 165px; }
   .texto-post {
     width: 165px; } }
@@ -618,7 +626,7 @@ nav {
   /* Página Blog */
   .contenedor-posts-blog .post-blog a img {
     width: 240px; }
-  .h3-link-med {
+  .h2-link-med {
     width: 240px; }
   .texto-post {
     width: 240px;
