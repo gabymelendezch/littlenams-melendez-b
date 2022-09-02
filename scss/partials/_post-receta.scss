@@ -17,8 +17,8 @@
 }
 
 .h2-post{
-    font-family: $font-roboto;
-    text-align: left;
+    @include h-normal;
+    text-align: left;  
     text-transform: capitalize;
 }
 
@@ -42,7 +42,6 @@
 
 .h3-receta{
     margin-top: 30px;
-    font-size: map-get($font-sizes,h3);
     text-align: left;
 }
 

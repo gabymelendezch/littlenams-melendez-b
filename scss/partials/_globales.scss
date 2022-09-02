@@ -51,14 +51,17 @@ h2{
 }
 
 .h2-pages{
-    @include h3-h6;
+    @include h-normal;
     text-transform: capitalize;
+    text-align: center;
 }
 
 /*** H3 ***/
 h3{
-    @include h3-h6;
+    @include h-normal;
+    text-align: center;
 }
+
 /*ancho donde está el <a> h3 página inicio*/
 .h3-link{
     width: 240px;

@@ -1,9 +1,8 @@
-@mixin h3-h6{
+@mixin h-normal{
     font-family: $font-roboto;
     font-size: map-get($font-sizes,h3);
     font-weight: 600;
     letter-spacing: .1px;
-    text-align: center;
 }
 
 @mixin hyperlink{

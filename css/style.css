@@ -56,8 +56,8 @@ h2 {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: .1px;
-  text-align: center;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  text-align: center; }
 
 /*** H3 ***/
 h3 {
@@ -397,6 +397,9 @@ nav {
 
 .h2-post {
   font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .1px;
   text-align: left;
   text-transform: capitalize; }
 
@@ -416,7 +419,6 @@ nav {
 
 .h3-receta {
   margin-top: 30px;
-  font-size: 18px;
   text-align: left; }
 
 .p-receta {
