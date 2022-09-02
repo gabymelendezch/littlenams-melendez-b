@@ -1,6 +1,6 @@
 body{
     width: 100%;
-    color: $colorGris;   
+    color: $color-texto;   
 }
 
 main{
@@ -26,7 +26,7 @@ section{
 h1{
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: $fontCabin;
+    font-family: $font-cabin;
     font-size: map-get($font-sizes,h1);
     font-weight: 600;
     text-align: left;
@@ -37,7 +37,7 @@ h1{
 /*** H2 ***/
 h2{
     margin-bottom: 30px;
-    font-family: $fontRobotoC;
+    font-family: $font-robotoC;
     font-size: map-get($font-sizes,h2);
     font-weight: 600;
     text-align: left;
@@ -46,13 +46,13 @@ h2{
 }
 
 .h2-cabin{
-    font-family: $fontCabin; 
-    font-size: 26px;
+    font-family: $font-cabin; 
+    font-size: map-get($font-sizes,h2)+6px;
 }
 
 /*** H3 ***/
 h3{
-    font-family: $fontRoboto;
+    font-family: $font-roboto;
     font-size: map-get($font-sizes,h3);
     font-weight: 600;
     letter-spacing: .1px;
@@ -65,17 +65,17 @@ h3{
 
 /*** Otras Etiquetas Generales ***/
 a{
-    color:$colorGris;
+    color:$color-texto;
 }
 
 form{
-    font-family: $fontRoboto; 
+    font-family: $font-roboto; 
     letter-spacing: 0;
 }
 
 p{
     margin-bottom: 30px;
-    font-family: $fontRoboto;
+    font-family: $font-roboto;
     font-size: map-get($font-sizes,normal);
     font-weight: normal;
     line-height: 1.8;
@@ -150,8 +150,8 @@ p{
 }
 
 .hover-redes:hover{
-    background-color: $mainColor;
-    border-color: $mainColor;
+    background-color: $main-color;
+    border-color: $main-color;
     color: #fff;
 }
 
@@ -160,13 +160,13 @@ p{
     width: 200px; 
     height: 33px; 
     padding-left:8px;
-    border: 1px solid $colorGris;
+    border: 1px solid $color-texto;
     border-radius: 6px;
 }
 
 /*** Hover Títulos ***/
 .hover-verde:hover{
-    color: $mainColor;
+    color: $main-color;
 }
 
 /*** Tags Categorías ***/
@@ -184,10 +184,10 @@ p{
         padding: 6px 10px;
         width: 180px;
         height: max-content;
-        border: 1px solid $colorGris;
-        font-family: $fontRobotoC;
-        font-size: 13px;
-        color: $colorGris;
+        border: 1px solid $color-texto;
+        font-family: $font-robotoC;
+        font-size: map-get($font-sizes,buttons)-1px;
+        color: $color-texto;
         letter-spacing: 1.5px;
         text-decoration: none;
         text-transform: uppercase;
@@ -196,9 +196,9 @@ p{
     
         &:hover{
             padding-inline: 12px;
-            background-color: $mainColor;
-            border-color: $colorGris;
-            color: $colorGris;
+            background-color: $main-color;
+            border-color: $color-texto;
+            color: $color-texto;
             transform: translateY(-2px);
         }
     }

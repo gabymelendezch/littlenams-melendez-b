@@ -1,0 +1,9 @@
+@mixin hyperlink{
+    color: $color-support;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover{
+        color:#444;
+    }
+}

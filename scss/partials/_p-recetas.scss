@@ -46,19 +46,19 @@
         a{
             text-align: center;
             text-decoration: none;
-            color: $colorGris;
+            color: $color-texto;
 
             .titulo-categorias{
                 display: block;
                 margin-bottom: 30px;
                 padding-top: 10px;
                 padding-bottom: 10px;
-                font-family: $fontRobotoC;    
+                font-family: $font-robotoC;    
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 
                 &:hover{
-                    color: $mainColor;
+                    color: $main-color;
                 }
                     
             }

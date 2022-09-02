@@ -44,15 +44,15 @@
         padding-inline: 2rem;
         padding-top: .5rem;
         padding-bottom: 1rem;
-        color: $colorGris;
+        color: $color-texto;
         border-radius: 10px;
 
-        background-color: $mainColor;
+        background-color: $main-color;
         --bs-nav-link-hover-color: #F6F4D2;
     }
 
     .nav-item{
-        font-family: $fontRoboto;
+        font-family: $font-roboto;
         text-transform: capitalize;
         letter-spacing: 0;
     }
@@ -220,7 +220,7 @@
     .texto-post{
         width: 200px;
         text-align: left;
-        font-size: 15px;
+        font-size: map-get($font-sizes,normal)-1px;
     }
 
 }

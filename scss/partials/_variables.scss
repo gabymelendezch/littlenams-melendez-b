@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
 
-$fontRoboto: 'Roboto', sans-serif;
-$fontRobotoC: 'Roboto Condensed', sans-serif;
-$fontCabin: 'Cabin Sketch', cursive;
+$font-roboto: 'Roboto', sans-serif;
+$font-robotoC: 'Roboto Condensed', sans-serif;
+$font-cabin: 'Cabin Sketch', cursive;
 
-$mainColor: #D4E09B;
-$colorGris: #444;
+$main-color: #D4E09B;
+$secondary-color: #a4c6ac;
+$color-support: #227C9D;
+
+$color-texto: #444;
 
 $font-sizes:(
     small: 12px,
