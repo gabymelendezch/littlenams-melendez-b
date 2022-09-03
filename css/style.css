@@ -442,6 +442,13 @@ nav {
   text-transform: uppercase;
   text-align: left; }
 
+main section p a {
+  color: #227C9D;
+  font-weight: bold;
+  text-decoration: none; }
+  main section p a:hover {
+    color: #444; }
+
 /* ----------- MEDIA QUERIES ---------- */
 /* ----- 1200 ----- */
 @media only screen and (max-width: 1200px) {
