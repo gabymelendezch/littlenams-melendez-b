@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -72,23 +72,31 @@
         </div>
     </nav>
 
-    <main class="container-fluid align-items-center">
-        <div class="row">
-            <section
-                class="col-md-12 d-flex flex-column justify-content-center align-items-center mt-5 border border-0">
-                <h1 class="text-center">OOOPS... Página No Encontrada</h1>
-                <p class="mx-2 mx-lg-5 mx-xl-5 px-2 px-lg-5 px-xl-5 text-center ">Lo siento, la página que estás
-                    buscando no existe o no está disponible temporalmente. Puedes volver a la <a class="hyperlink"
-                        href="../index.html">página de inicio</a> o intentar encontrar lo que estás buscando utilizando
-                    el formulario de búsqueda.</p>
-                <div class="d-flex justify-content-center flex-column">
-                    <form class="text-center" action="" method="get">
-                        <!--llevar a otra página que aparezcan los posts que contengan las palabras claves-->
-                        <input type="search" class="box-form-aside" name="buscar-receta-box" required>
-                        <input class="botones-accion" type="submit" value="Buscar">
-                    </form>
+    <main>
+        <div class="container-fluid align-items-center container-404">
+            <div class="row d-flex justify-content-center align-items-center pb-5">
+
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center mt-5">
+                    <img src="../images/littlenams-404.png" alt="Logo Little Ñams" class="opacity-75">
+                    <h1>Error 404</h1>
                 </div>
-            </section>
+
+                <div
+                    class="col-md-6 d-flex flex-column justify-content-center align-items-center my-1 my-md-5 my-lg-5 my-xl-5 border border-0">
+                    <h2 class="h2-cabin text-center">¡OOOPS!</h2>
+                    <p class="text-center">Lo siento, no hemos podido encontrar la página que buscas. Puedes volver a la <a class="hyperlink"
+                            href="../index.html">página de inicio</a> o intentar encontrar lo que estás buscando utilizando
+                        el formulario de búsqueda.</p>
+                    <div class="d-flex justify-content-center flex-column">
+                        <form class="text-center" action="" method="get">
+                            <!--llevar a otra página que aparezcan los posts que contengan las palabras claves-->
+                            <input type="search" class="box-form-aside" name="buscar-receta-box" required>
+                            <input class="botones-accion" type="submit" value="Buscar">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </main>
 

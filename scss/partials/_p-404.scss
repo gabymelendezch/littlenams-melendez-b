@@ -1,9 +1,13 @@
 main{
-    section{
+    div{
         p{
             a{
                 @include hyperlink; 
             }
         }
     }
+}
+
+.container-404{
+    padding-top: 70px;
 }

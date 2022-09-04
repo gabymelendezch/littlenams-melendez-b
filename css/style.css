@@ -442,12 +442,15 @@ nav {
   text-transform: uppercase;
   text-align: left; }
 
-main section p a {
+main div p a {
   color: #227C9D;
   font-weight: bold;
   text-decoration: none; }
-  main section p a:hover {
+  main div p a:hover {
     color: #444; }
+
+.container-404 {
+  padding-top: 70px; }
 
 /* ----------- MEDIA QUERIES ---------- */
 /* ----- 1200 ----- */
@@ -468,7 +471,10 @@ main section p a {
     grid-template-rows: repeat(6, 1fr); }
   /* Página Contacto */
   .box-form-aside {
-    width: 150px; } }
+    width: 150px; }
+  /* Página 404 */
+  .container-404 {
+    padding-top: 50px; } }
 
 /* ----- 992 ----- */
 @media only screen and (max-width: 991px) {
@@ -553,7 +559,10 @@ main section p a {
     border-top: .5px solid #227c9d55; }
   .borde-receta-tiempos {
     border-right: none;
-    border-bottom: 1px solid #e4e4e4; } }
+    border-bottom: 1px solid #e4e4e4; }
+  /* Página 404 */
+  .container-404 {
+    padding-top: 30px; } }
 
 /* ----- 500 ----- */
 @media only screen and (max-width: 532px) {
