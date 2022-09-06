@@ -52,7 +52,7 @@ h2{
 
 .h2-pages{
     @include h-normal;
-    text-transform: capitalize;
+    text-transform: initial;
     text-align: center;
 }
 
