@@ -449,7 +449,8 @@ nav {
   .suscripcion .botones-accion, .suscripcion .botones-ir {
     padding-top: 6px;
     padding-bottom: 6px;
-    background-color: #fff; }
+    background-color: #fff;
+    font-family: "Cabin Sketch", cursive; }
 
 .estilo-modal {
   background-color: #fff;

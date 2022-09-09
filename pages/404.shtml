@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+    content="Página no encontrada. Volver a la página de inicio o utilizar el formulario de búsqueda. ">
+    <meta name="keywords"
+    content="error 404, buscar, formulario, inicio">
+
     <!--Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/6ae03c6937.js" crossorigin="anonymous"></script>
 
@@ -90,7 +96,7 @@
                     <div class="d-flex justify-content-center flex-column">
                         <form class="text-center" action="" method="get">
                             <!--llevar a otra página que aparezcan los posts que contengan las palabras claves-->
-                            <input type="search" class="box-form-aside" name="buscar-receta-box" required>
+                            <input type="search" class="box-form" name="buscar-receta-box" required>
                             <input class="botones-accion" type="submit" value="Buscar">
                         </form>
                     </div>
