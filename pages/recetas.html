@@ -168,6 +168,24 @@
 
     </section>
 
+    <!-- Buscar una Receta -->
+    <section class="container">
+      <h2 class="text-center">Encontrar una Receta</h2>
+
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center flex-column">
+
+          <form class="text-center" action="" method="get">
+            <!--llevar a otra página que aparezcan los posts que contengan las palabras claves-->
+            <input type="search" class="box-form" name="buscar-receta-box" required>
+            <input class="botones-accion" type="submit" value="Buscar">
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+
     <!-- Recetas por Categorías -->
     <section>
       <h2 class="ps-3">Recetas por Categoría</h2>
@@ -302,26 +320,8 @@
     </section>
 
 
-    <!-- Buscar una Receta -->
-    <section class="container">
-      <h2 class="text-center">Encontrar una Receta</h2>
-
-      <div class="row">
-        <div class="col-md-12 d-flex justify-content-center flex-column">
-
-          <form class="text-center" action="" method="get">
-            <!--llevar a otra página que aparezcan los posts que contengan las palabras claves-->
-            <input type="search" class="box-form" name="buscar-receta-box" required>
-            <input class="botones-accion" type="submit" value="Buscar">
-          </form>
-        </div>
-      </div>
-
-    </section>
-
-
     <!-- Redes Sociales -->
-    <section class="container">
+    <section class="container border-bottom-0">
       <h2 class="text-center">Sígueme</h2>
 
       <div class="row">
@@ -346,21 +346,43 @@
 
 
     <!-- Suscripción -->
-    <section class="container-fluid sin-borde pb-5">
+    <section class="container-fluid sin-borde suscripcion gradiente">
 
-      <h2 class="mt-4">No te pierdas de ninguna Novedad</h2>
+      <h2 class="mb-3 h2-cabin text-center">Suscríbete a mis Correos</h2>
 
-      <div class="row">
-        <div class="col-md-12 d-flex justify-content-center flex-column">
-          <p class="mb-4">Te comparto semanalmente recetas para toda la familia, llegarán a tu correo electrónico
-            totalmente GRATIS!</p>
+      <div class="row-fluid">
+        <div class="col-md-12 d-flex flex-column flex-md-row justify-content-center align-items-center">
+          <p class="mb-3 mb-md-0 me-0 me-md-3 text-center">No te pierdas de ninguna novedad... formemos una linda comunidad.</p>
+        
+          <button type="button" class="botones-accion" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@email">¡Quiero!</button>  
+        </div>
+      </div>
 
-          <form class="" action="" method="post">
-            <input type="email" class="me-1 ps-1 box-form" required>
-            <input class="botones-accion" type="submit" value="Suscríbete">
-            <!--una vez suscrito, escribir un mensaje en el mismo espacio para notificar-->
-          </form>
-
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content estilo-modal">
+            <div class="modal-header">
+              <h3 class="modal-title h2-cabin fs-3" id="exampleModalLabel">RECIBE MIS RECETAS SALUDABLES</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="mb-3 text-center">Te compartiré semanalmente recetas para bebés, niños y toda la familia. Llegarán a tu correo electrónico
+                totalmente GRATIS!</p>
+              <form class="form-suscripcion">
+                <div class="mb-2">
+                  <label for="nombre-suscriptor" class="col-form-label fw-bold">Nombre</label>
+                  <input type="text" class="form-control" id="nombre-suscriptor" required>
+                </div>
+                <div class="mb-2">
+                  <label for="email-suscriptor" class="col-form-label fw-bold">Email</label>
+                  <input type="email" class="form-control" id="email-suscriptor" required>
+                </div>
+                <div class="mb-3 text-center">
+                  <input class="botones-accion mt-3" type="submit" value="Suscribirme">
+                </div>
+              </form>
+            </div>       
+          </div>
         </div>
       </div>
 
@@ -384,22 +406,21 @@
               target="_blank"><i class="fa-brands fa-pinterest-p px-2"></i></a>
           </div>
 
-          <div class="footer-menu d-flex flex-wrap mx-3">
+          <div class="footer-menu d-flex flex-wrap mx-3 justify-content-center">
             <a class="text-decoration-none" href="">
               <p class="p-footer hover-footer pe-4 mb-0">Términos de Uso</p>
             </a>
             <a class="text-decoration-none" href="">
-              <p class="p-footer hover-footer pe-4 mb-0">Políticas de Privacidad</p>
+              <p class="p-footer hover-footer mb-0">Políticas de Privacidad</p>
             </a>
           </div>
-
         </div>
 
 
         <div class="col-md-6 d-flex flex-wrap justify-content-center align-items-center">
           <p class="p-footer mb-0">Copyright © 2022 - All Rights Reserved - Little Ñams</p>
-
         </div>
+
       </div>
     </div>
   </footer>

@@ -1,0 +1,29 @@
+.suscripcion{
+    margin-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+        .botones-accion{
+            padding-top: 6px;
+            padding-bottom: 6px;
+            background-color: #fff;
+        }
+}
+.estilo-modal{
+    background-color: #fff;
+    color: $color-texto;
+}
+
+.estilo-modal h3{
+    color: $color-support;
+}
+
+.form-suscripcion .botones-accion{
+    display: inline-block;
+    background-color: $color-support ;
+    color:#fff;
+
+    &:hover{
+        background-color:#258bb0;
+    }
+}

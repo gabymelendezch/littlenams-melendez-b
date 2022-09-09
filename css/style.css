@@ -442,6 +442,29 @@ nav {
   text-transform: uppercase;
   text-align: left; }
 
+.suscripcion {
+  margin-bottom: 30px;
+  padding-top: 35px;
+  padding-bottom: 35px; }
+  .suscripcion .botones-accion, .suscripcion .botones-ir {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #fff; }
+
+.estilo-modal {
+  background-color: #fff;
+  color: #444; }
+
+.estilo-modal h3 {
+  color: #227C9D; }
+
+.form-suscripcion .botones-accion, .form-suscripcion .botones-ir {
+  display: inline-block;
+  background-color: #227C9D;
+  color: #fff; }
+  .form-suscripcion .botones-accion:hover, .form-suscripcion .botones-ir:hover {
+    background-color: #258bb0; }
+
 main div p a {
   color: #227C9D;
   font-weight: bold;

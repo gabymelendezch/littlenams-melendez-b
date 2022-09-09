@@ -180,7 +180,7 @@
           </section>
 
           <!-- Tags Categorías -->
-          <section class="seccion-tags text-center">
+          <section class="seccion-tags text-center border-bottom-0">
             <h2 class="text-center">Categorías</h2>
 
             <div class="d-flex flex-wrap justify-content-center contenedor-tags">
@@ -203,29 +203,50 @@
             </div>
           </section>
 
-          <!-- Suscripción -->
-          <section class="sin-borde">
 
-            <h2 class="mt-4 text-center">No te pierdas de ninguna Novedad</h2>
+           <!-- Suscripción -->
+          <section class="container-fluid sin-borde suscripcion gradiente my-0 px-4">
 
-            <div class="d-flex justify-content-center flex-column">
-              <p class="mb-4 text-center">Te comparto semanalmente recetas para toda la familia, llegarán a tu correo
-                electrónico totalmente GRATIS!</p>
+            <h2 class="mb-3 h2-cabin text-center">Suscríbete a mis Correos</h2>
 
-              <div class="container-fluid">
-                <form class="text-center" action="" method="post">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <input type="email" class="me-1 ps-1 box-form-aside" required>
-                      <input class="botones-accion" type="submit" value="Suscríbete">
-                      <!--una vez suscrito, escribir un mensaje en el mismo espacio para notificar-->
-                    </div>
-                  </div>
-                </form>
+            <div class="row-fluid">
+              <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                <p class="mb-3 mb-md-0 text-center">No te pierdas de ninguna novedad... formemos una linda comunidad.</p>
+              
+                <button type="button" class="botones-accion mt-md-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@email">¡Quiero!</button>  
               </div>
-
             </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content estilo-modal">
+                  <div class="modal-header">
+                    <h3 class="modal-title h2-cabin fs-3" id="exampleModalLabel">RECIBE MIS RECETAS SALUDABLES</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="mb-3 text-center">Te compartiré semanalmente recetas para bebés, niños y toda la familia. Llegarán a tu correo electrónico
+                      totalmente GRATIS!</p>
+                    <form class="form-suscripcion">
+                      <div class="mb-2">
+                        <label for="nombre-suscriptor" class="col-form-label fw-bold">Nombre</label>
+                        <input type="text" class="form-control" id="nombre-suscriptor" required>
+                      </div>
+                      <div class="mb-2">
+                        <label for="email-suscriptor" class="col-form-label fw-bold">Email</label>
+                        <input type="email" class="form-control" id="email-suscriptor" required>
+                      </div>
+                      <div class="mb-3 text-center">
+                        <input class="botones-accion mt-3" type="submit" value="Suscribirme">
+                      </div>
+                    </form>
+                  </div>       
+                </div>
+              </div>
+            </div>
+
           </section>
+
         </aside>
       </div>
     </section>
@@ -248,12 +269,12 @@
               target="_blank"><i class="fa-brands fa-pinterest-p px-2"></i></a>
           </div>
 
-          <div class="footer-menu d-flex flex-wrap mx-3">
+          <div class="footer-menu d-flex flex-wrap mx-3 justify-content-center">
             <a class="text-decoration-none" href="">
               <p class="p-footer hover-footer pe-4 mb-0">Términos de Uso</p>
             </a>
             <a class="text-decoration-none" href="">
-              <p class="p-footer hover-footer pe-4 mb-0">Políticas de Privacidad</p>
+              <p class="p-footer hover-footer mb-0">Políticas de Privacidad</p>
             </a>
           </div>
 
