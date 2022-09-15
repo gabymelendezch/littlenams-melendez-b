@@ -1,9 +1,8 @@
 @import"./partials/variables"; // siempre va primero
 @import"./partials/mixins";
 
-@import"./partials/reset"; // le sigue reset
+@import"./partials/globales"; // le sigue globales que contiene el reset
 
-@import"./partials/globales";
 @import"./partials/extend";
 @import"./partials/navbar";
 @import"./partials/footer";
