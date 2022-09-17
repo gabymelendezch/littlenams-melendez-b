@@ -53,7 +53,7 @@ h2{
 
 .h2-cabin{
     font-family: $font-cabin; 
-    font-size: map-get($font-sizes,h2)+6px;
+    font-size: map-get($font-sizes,h2)+4px;
 }
 
 .h2-pages{
@@ -213,4 +213,27 @@ p{
         }
     }
 
+}
+
+/*** Breadcrumb ***/
+.estilo-breadcrumb{
+    margin-top: 20px;
+    padding-left: 20px;
+    border: none;
+    font-size: 11px;
+    color: $color-texto;
+
+    --bs-breadcrumb-divider: '»';
+
+    .breadcrumb{
+        margin-bottom: 0px;
+
+        .breadcrumb-link{
+            text-decoration: none;
+            
+            &:hover{
+                color: gray;
+            }                
+        }
+    }
 }

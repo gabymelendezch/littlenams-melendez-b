@@ -49,7 +49,7 @@ h2 {
 
 .h2-cabin {
   font-family: "Cabin Sketch", cursive;
-  font-size: 26px; }
+  font-size: 24px; }
 
 .h2-pages {
   font-family: "Roboto", sans-serif;
@@ -185,6 +185,21 @@ p {
       border-color: #444;
       color: #444;
       transform: translateY(-2px); }
+
+/*** Breadcrumb ***/
+.estilo-breadcrumb {
+  margin-top: 20px;
+  padding-left: 20px;
+  border: none;
+  font-size: 11px;
+  color: #444;
+  --bs-breadcrumb-divider: '»'; }
+  .estilo-breadcrumb .breadcrumb {
+    margin-bottom: 0px; }
+    .estilo-breadcrumb .breadcrumb .breadcrumb-link {
+      text-decoration: none; }
+      .estilo-breadcrumb .breadcrumb .breadcrumb-link:hover {
+        color: gray; }
 
 /***  Botones Acción ***/
 .botones-accion, .botones-ir {
@@ -448,7 +463,6 @@ nav {
   padding-bottom: 35px; }
   .suscripcion .botones-accion, .suscripcion .botones-ir {
     background-color: #fff;
-    font-family: "Cabin Sketch", cursive;
     font-weight: bolder; }
     .suscripcion .botones-accion:hover, .suscripcion .botones-ir:hover {
       background-color: #d4e09bd0; }

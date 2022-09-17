@@ -5,7 +5,6 @@
 
         .botones-accion{
             background-color: #fff;
-            font-family: $font-cabin;
             font-weight: bolder;
 
             &:hover{
@@ -13,6 +12,7 @@
             }
         }
 }
+
 .estilo-modal{
     background-color: #fff;
     color: $color-texto;
