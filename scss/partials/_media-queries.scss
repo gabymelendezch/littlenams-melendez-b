@@ -43,6 +43,11 @@
     }
     
     /* Nav Bar */
+    .animacion-logo{
+        width: 150px;
+        height: auto;
+    }
+
     .navbar-nav{
         margin-top: 1rem;
         padding-inline: 2rem;
@@ -178,10 +183,6 @@
 @media only screen and (max-width: 532px) {
     main{
         margin-inline: 0px;
-    }
-
-    .animacion-logo{
-        width: 175px;
     }
 
     .img-thumb-pequeño{

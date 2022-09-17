@@ -233,7 +233,7 @@ p {
     color: #444;
     transform: translateY(-4px); }
 
-/* NAV BAR */
+/* NAVBAR */
 nav {
   border-bottom: .5px solid #227c9d55; }
 
@@ -263,14 +263,20 @@ nav {
 .font-nav {
   font-family: 'Roboto Condensed', sans-serif; }
 
-.navbar-nav {
-  --bs-nav-link-hover-color: #98a9b0; }
-
 .nav-link {
+  margin-inline: 6px;
+  padding: 8px 16px 10px 16px;
   color: #444;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   letter-spacing: 0;
-  margin-inline: .4rem; }
+  text-decoration: none; }
+  .nav-link:hover {
+    color: #98a9b0; }
+
+.activo {
+  color: gray; }
+  .activo:hover {
+    color: gray; }
 
 .subrayado-menu1 {
   border-bottom: 5px solid #a4c6ac; }
@@ -281,30 +287,18 @@ nav {
 .subrayado-menu3 {
   border-bottom: 5px solid #D4E09B; }
 
-/* Botón Buscar Nav Bar */
-.btn-outline-success {
-  --bs-btn-color: #444;
-  --bs-btn-border-color: #444;
-  --bs-btn-hover-color: #444;
-  --bs-btn-hover-bg: #F6F4D2;
-  --bs-btn-hover-border-color: #444;
-  --bs-btn-focus-shadow-rgb: 25,135,84;
-  --bs-btn-active-color: #444;
-  --bs-btn-active-bg: #F6F4D2;
-  --bs-btn-active-border-color: #444;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: $main-color;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #444;
-  --bs-gradient: none; }
-
+/* Botón Buscar Navbar */
 .nav-box-buscar {
   border: 1px solid #444;
   font-family: "Roboto", sans-serif; }
 
 .nav-boton-buscar {
   width: 50px;
-  margin-left: 0px; }
+  margin-left: 0px;
+  border: 1px solid #444;
+  box-shadow: 25,135,84; }
+  .nav-boton-buscar:hover {
+    background-color: #F6F4D2; }
 
 /*** FOOTER ***/
 .container-footer {
@@ -521,6 +515,9 @@ main div p a {
     margin-left: 10px;
     margin-right: 10px; }
   /* Nav Bar */
+  .animacion-logo {
+    width: 150px;
+    height: auto; }
   .navbar-nav {
     margin-top: 1rem;
     padding-inline: 2rem;
@@ -607,8 +604,6 @@ main div p a {
 @media only screen and (max-width: 532px) {
   main {
     margin-inline: 0px; }
-  .animacion-logo {
-    width: 175px; }
   .img-thumb-pequeño {
     width: 200px; }
   .img-thumb-mediano {
